@@ -1,0 +1,2523 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>UCCU MDR</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/night.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="./src/css/main.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+
+					<h3 class="text-start">
+						<span class="red">U</span>tilizing pop-up platform on <span class="red">C</span>ubeSat to achieve <span class="red">C</span>ommercial activities in the <span class="red">U</span>niverse
+					</h3>
+					<div class="d-flex flex-column justify-content-end">
+						<h4 class="mx-auto">
+							MDR
+						</h4>
+						<h4 class="mx-auto">
+							30 July 2021
+						</h4>
+						<small class="mx-auto">
+							指導：高空動力實驗室張起為教授與學長姐、太空酬載實驗室趙吉光教授與學長姊
+						</small>
+					</div>
+				</section>
+				<section>
+					<section data-auto-animate>
+						<h2>Outline</h2>
+					</section>
+					<section data-auto-animate>
+						<h2>Outline</h2>
+						<ul>
+							<li>Mission Goals and Objectives</li>
+							<li>Concept of Operation</li>
+							<li>Timeline</li>
+							<li>Payload, Mission Traceability Matrix</li>
+							
+							<li>Top Level Requirements</li>
+							<li>System Requirements</li>
+							<li>Work Distribution</li>
+							<li>Subsystem Requirements</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section data-auto-animate>
+						<h3>Mission Goals and Objectives</h3>
+					</section>
+					<section data-auto-animate>
+						<h3>Mission Goals and Objectives</h3>
+						<br>
+						<h4 class="text-start mx-3">Mission Statement: </h4>
+						<p class="text-start px-5">
+							Allow sponsors to send their customized message and objects to space
+						</p>
+					</section>
+				</section>
+				<section>
+					<section data-auto-animate>
+						<h3>Level 0:</h3>
+						<h3>Mission Goals and Objectives</h3>
+						<h4>Commercial, Mission, and Educational</h4>
+					</section>
+					<section data-auto-animate>
+						<h3>Commercial Objectives</h3>
+						<table>
+							<thead>
+							  <tr>
+								<th>#</th>
+								<th>Refnum.</th>
+								<th>Description</th>
+								<th>Source</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<th>CML</th>
+								<td>0.REQ.CML.1</td>
+								<td>To demonstrate the business potential in space industry to enterprises in Taiwan.</td>
+								<td>Customer</td>
+							  </tr>
+							  <tr>
+								<th>CML</th>
+								<td>0.REQ.CML.2</td>
+								<td>Users shall receive a video of their message displayed or object together with Earth.</td>
+								<td>Customer</td>
+							  </tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-auto-animate>
+						<h3>Mission Objectives</h3>
+						<table>
+							<thead>
+								<tr>
+								  <th>#</th>
+								  <th>Refnum.</th>
+								  <th>Description</th>
+								  <th>Source</th>
+								</tr>
+							</thead>
+							 <tbody>
+								<tr>
+									<th>MIS</th>
+									<td>0.REQ.MIS.1</td>
+									<td>To develop a spacecraft to provide the platform.</td>
+									<td>Customer</td>
+								</tr>
+								<tr>
+									<th>MIS</th>
+									<td>0.REQ.MIS.2</td>
+									<td>Commercial activity shall be taken for a minimum of 1 year.</td>
+									<td>Customer</td>
+								</tr>
+								<tr>
+									<th>MIS</th>
+									<td>0.REQ.MIS.3</td>
+									<td>80%(TBD) of spacecraft data shall be downloaded to ground station</td>
+									<td>Customer</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-auto-animate>
+						<h3>Educational Objectives</h3>
+						<table>
+							<thead>
+								<tr>
+								  <th>#</th>
+								  <th>Refnum.</th>
+								  <th>Description</th>
+								  <th>Source</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>EDU</th>
+									<td>0.REQ.EDU.1</td>
+									<td>An undergraduate student team shall learn to develop a cubesat mission</td>
+									<td>Customer</td>
+								</tr>
+								<tr>
+									<th>EDU</th>
+									<td>0.REQ.EDU.2</td>
+									<td>To encourage industry-academia collaboration in space industry.</td>
+									<td>Customer</td>
+								</tr>
+								<tr>
+									<th>EDU</th>
+									<td>0.REQ.EDU.3</td>
+									<td>To verify the possibility of reducing cost in science research for future science-oriented CubeSat missions.</td>
+									<td>Customer</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+				<section>
+					<section data-auto-animate data-transition="none">
+						<h3>Timeline</h3>
+					</section>
+					<section data-auto-animate class="timeLine" data-transition="none">
+						<h3>Timeline</h3>
+						<img class="no-max time-line stage-1" src="./src/img/timelinesolong.png" alt="">
+					</section>
+					<section class="timeLine" data-transition="none">
+						<h3>Timeline</h3>
+						<img class="no-max time-line stage-2" src="./src/img/timelinesolong.png" alt="">
+					</section>
+					<section class="timeLine" data-transition="none">
+						<h3>Timeline</h3>
+						<img class="no-max time-line stage-3" src="./src/img/timelinesolong.png" alt="">
+					</section>
+					<section class="timeLine" data-transition="none">
+						<h3>Timeline</h3>
+						<img class="no-max time-line stage-4" src="./src/img/timelinesolong.png" alt="">
+					</section>
+					<section class="timeLine" data-transition="none">
+						<h3>Timeline</h3>
+						<img class="no-max time-line stage-5" src="./src/img/timelinesolong.png" alt="">
+					</section>
+				</section>
+				<section>
+					<section class="video">
+						<h2>Concept of Operation</h2>
+						<video loop autoplay src="./src/video/Movie_03.mp4"></video>
+					</section>
+					<section>
+						<div class="d-flex flex-row" style="max-width: 100vw;">
+							<video loop autoplay src="./src/video/Movie_01.mp4"></video>
+							<img class="hero" style="position: absolute; top: 300px;" src="./src/img/good.bmp" alt="" width="250px" height="100px">
+						</div>
+					</section>
+					<section>
+						<h2>Start</h2>
+						<ul>
+							<li>Launch: rideshare rocket</li>
+							<li>500-619 km Sun Synchronous Orbit, LTDN TBD</li>
+							<li>Mission Lifetime: 1 year, Feb 2023 ~ Mar 2024</li>
+						</ul>
+					</section>
+					<section data-transition="none">
+						<div class="charge_mode main-stage">
+							<h3 class="text-dark">Charging Mode</h3>
+							<ul>
+								<li>ADCS sun-pointing</li>
+								<li>CDH ON</li>
+								<li>EPS ON</li>
+								<li>COMM BEACON</li>
+								<li>P/L OFF</li>
+							</ul>
+						</div>
+						<img class="earth" src="./src/img/earth.png" alt="" width="350px" height="350px">
+						<img class="sat-img-1" src="./src/img/sat.png" alt="">
+					</section>
+					<section data-transition="none">
+						<div class="camera_mode main-stage fade-in">
+							<h3 class="text-dark">Camera Mode</h3>
+							<ul>
+								<li>ADCS surface-pointing</li>
+								<li>CDH ON</li>
+								<li>EPS ON</li>
+								<li>COMM BEACON</li>
+								<li>P/L ON</li>
+							</ul>
+						</div>
+						<span class="fade-in late up-arrow-text">8 seconds later</span>
+						<span class="fade-in late up-arrow">&#8593;</span>
+						<span class="fade-in late down-arrow-text">Horizon,<br>Sun-lit hemisphere,<br>As required</span>
+						<span class="fade-in late down-arrow">&#8595;</span>
+						<div class="charge_mode main-standby standby">
+							<h3 class="text-dark">Charging Mode</h3>
+							<ul>
+								<li>ADCS sun-pointing</li>
+								<li>CDH ON</li>
+								<li>EPS ON</li>
+								<li>COMM BEACON</li>
+								<li>P/L OFF</li>
+							</ul>
+						</div>
+						<img class="earth" src="./src/img/earth.png" alt="" width="350px" height="350px">
+						<img class="sat-img-2" src="./src/img/sat.png" alt="">
+					</section>
+					<section data-transition="none">
+						<div class="camera_mode main-stage fade-out">
+							<h3 class="text-dark">Camera Mode</h3>
+							<ul>
+								<li>ADCS surface-pointing</li>
+								<li>CDH ON</li>
+								<li>EPS ON</li>
+								<li>COMM BEACON</li>
+								<li>P/L ON</li>
+							</ul>
+						</div>
+						<span class="fade-out up-arrow-text">8 seconds later</span>
+						<span class="fade-out up-arrow">&#8593;</span>
+						<span class="fade-out down-arrow-text">Horizon,<br>Sun-lit hemisphere,<br>As required</span>
+						<span class="fade-out down-arrow">&#8595;</span>
+						<div class="charge_mode main-standby to-main">
+							<h3 class="text-dark">Charging Mode</h3>
+							<ul>
+								<li>ADCS sun-pointing</li>
+								<li>CDH ON</li>
+								<li>EPS ON</li>
+								<li>COMM BEACON</li>
+								<li>P/L OFF</li>
+							</ul>
+						</div>
+						<img class="earth" src="./src/img/earth.png" alt="" width="350px" height="350px">
+						<img class="sat-img-3" src="./src/img/sat.png" alt="">
+					</section>
+					<section data-transition="none">
+						<div class="charge_mode main-standby standby">
+							<h3 class="text-dark">Charging Mode</h3>
+							<ul>
+								<li>ADCS sun-pointing</li>
+								<li>CDH ON</li>
+								<li>EPS ON</li>
+								<li>COMM BEACON</li>
+								<li>P/L OFF</li>
+							</ul>
+						</div>
+						<span class="fade-in late up-arrow-text">Not Eclipse</span>
+						<span class="fade-in late up-arrow">&#8593;</span>
+						<span class="fade-in late down-arrow-text"> <br>Eclipse</span>
+						<span class="fade-in late down-arrow">&#8595;</span>
+						<div class="standby_mode main-stage fade-in">
+							<h3 class="text-dark">Standby Mode</h3>
+							<ul>
+								<li>ADCS OFF</li>
+								<li>CDH ON</li>
+								<li>EPS ON</li>
+								<li>COMM Rx</li>
+								<li>P/L OFF</li>
+							</ul>
+						</div>
+						<img class="earth" src="./src/img/earth.png" alt="" width="350px" height="350px">
+						<img class="sat-img-4" src="./src/img/sat.png" alt="">
+					</section>
+					<section data-transition="none">
+						<div class="charge_mode main-standby fade-out">
+							<h3 class="text-dark">Charging Mode</h3>
+							<ul>
+								<li>ADCS sun-pointing</li>
+								<li>CDH ON</li>
+								<li>EPS ON</li>
+								<li>COMM BEACON</li>
+								<li>P/L OFF</li>
+							</ul>
+						</div>
+						<div class="standby_mode main-standby standby late">
+							<h3 class="text-dark">Standby Mode</h3>
+							<ul>
+								<li>ADCS OFF</li>
+								<li>CDH ON</li>
+								<li>EPS ON</li>
+								<li>COMM Rx</li>
+								<li>P/L OFF</li>
+							</ul>
+						</div>
+						<span class="fade-in late up-arrow-text">GS enters view</span>
+						<span class="fade-in late up-arrow">&#8593;</span>
+						<span class="fade-in late down-arrow-text"> <br> GS leaves view</span>
+						<span class="fade-in late down-arrow">&#8595;</span>
+						<div class="ttc_mode main-stage fade-in">
+							<h3 class="text-dark">TT&C Mode</h3>
+							<ul>
+								<li>ADCS surface-pointing</li>
+								<li>CDH ON</li>
+								<li>EPS ON</li>
+								<li>COMM Tx</li>
+								<li>P/L OFF</li>
+							</ul>
+						</div>
+						<img class="earth" src="./src/img/earth.png" alt="" width="350px" height="350px">
+						<img class="ttc fade-in late" src="./src/img/ttc.png" alt="">
+						<img class="sat-img-5" src="./src/img/sat.png" alt="">
+					</section>
+					<section data-transition="none">
+						<div class="standby_mode main-standby to-main">
+							<h3 class="text-dark">Standby Mode</h3>
+							<ul>
+								<li>ADCS OFF</li>
+								<li>CDH ON</li>
+								<li>EPS ON</li>
+								<li>COMM Rx</li>
+								<li>P/L OFF</li>
+							</ul>
+						</div>
+						<div class="ttc_mode main-stage fade-out">
+							<h3 class="text-dark">TT&C Mode</h3>
+							<ul>
+								<li>ADCS surface-pointing</li>
+								<li>CDH ON</li>
+								<li>EPS ON</li>
+								<li>COMM Tx</li>
+								<li>P/L OFF</li>
+							</ul>
+						</div>
+						<img class="earth" src="./src/img/earth.png" alt="" width="350px" height="350px">
+						<img class="sat-img-6" src="./src/img/sat.png" alt="">
+					</section>
+					<section data-transition="none">
+						<div class="standby_mode standby_mode-standby standby">
+							<h3 class="text-dark">Standby Mode</h3>
+							<ul>
+								<li>ADCS OFF</li>
+								<li>CDH ON</li>
+								<li>EPS ON</li>
+								<li>COMM Rx</li>
+								<li>P/L OFF</li>
+							</ul>
+						</div>
+						<div class="charge_mode charge_mode-standby standby">
+							<h3 class="text-dark">Charging mode</h3>
+							<ul>
+								<li>ADCS sun-pointing</li>
+								<li>CDH ON</li>
+								<li>EPS ON</li>
+								<li>COMM BEACON</li>
+								<li>P/L OFF</li>
+							</ul>
+						</div>
+						<div class="camera_mode camera_mode-standby standby">
+							<h3 class="text-dark">Camera mode</h3>
+							<ul>
+								<li>ADCS surface-pointing</li>
+								<li>CDH ON</li>
+								<li>EPS ON</li>
+								<li>COMM BEACON</li>
+								<li>P/L ON</li>
+							</ul>
+						</div>
+						<div class="ttc_mode ttc_mode-standby standby">
+							<h3 class="text-dark">TT&C mode</h3>
+							<ul>
+								<li>ADCS surface-pointing</li>
+								<li>CDH ON</li>
+								<li>EPS ON</li>
+								<li>COMM Tx</li>
+								<li>P/L OFF</li>
+							</ul>
+						</div>
+						<span class="fade-in late" style="position: absolute; left: 75px; top: 140px; font-size: 5rem;">&#8593;</span>
+						<span class="fade-in late" style="position: absolute; left: 125px; top: 140px; font-size: 5rem;">&#8595;</span>
+						<span class="fade-in late" style="position: absolute; left: 370px; top: 140px; font-size: 5rem;">&#8593;</span>
+						<span class="fade-in late" style="position: absolute; left: 420px; top: 140px; font-size: 5rem;">&#8595;</span>
+						<span class="fade-in late" style="position: absolute; left: 235px; top: -20px; font-size: 5rem;">&#8594;</span>
+						<span class="fade-in late" style="position: absolute; left: 235px; top: 20px; font-size: 5rem;">&#8592;</span>
+						<div class="fade-in late emergency">
+							<h3 class="text-dark">Emergency</h3>
+							<div class="safe-mode">
+								<h3 class="text-dark">Safe mode</h3>
+								<ul>
+									<li>ADCS sun-pointing</li>
+									<li>CDH ON</li>
+									<li>EPS ON</li>
+									<li>COMM Beacon</li>
+									<li>P/L OFF</li>
+								</ul>
+							</div>
+							<span style="position: absolute;top: 300px; left: 50px;">電量 &lt; 25% <br><small>(ADCS OFF)</small></span>
+							<span style="position: absolute;top: 285px; left: 180px; font-size: 3rem;">&#8593;</span>
+							<span style="position: absolute;top: 300px; left: 240px;">電量 &gt; 40% <br><small>(ADCS ON)</small></span>
+							<span style="position: absolute;top: 285px; left: 210px; font-size: 3rem;">&#8595;</span>
+							<span style="position: absolute;top: 95px; left: -105px; font-size: 1.5rem; text-align: center;">電量 &lt; 70% <br><small>(ADCS roughly sun-pointing)</small></span>
+							<span style="position: absolute;top: 110px; left: -55px; font-size: 4rem;">&#8594;</span>
+							<span style="position: absolute;top: 200px; left: -95px; font-size: 1.5rem;">電量 &gt; 75% <br><small>(ADCS fine sun-pointing)</small></span>
+							<span style="position: absolute;top: 130px; left: -55px; font-size: 4rem;">&#8592;</span>
+							<div class="phoenix-mode">
+								<h3 class="text-dark">Phoenix mode</h3>
+								<ul>
+									<li>ADCS OFF</li>
+									<li>CDH ON</li>
+									<li>EPS ON</li>
+									<li>COMM Beacon</li>
+									<li>P/L OFF</li>
+								</ul>
+							</div>
+						</div>
+						<img class="fade-out earth" src="./src/img/earth.png" alt="" width="350px" height="350px">
+					</section>
+					<section>
+						<h2>Modes</h2>
+						<img src="src/img/modes.png" style="max-width: 90% !important; max-height: 90% !important">
+					</section>
+					<section>
+						<h2>Closeout</h2>
+						  <ul>
+							  <li>Deorbit within 25 years after mission ended.</li>
+						  </ul>
+						<img src="">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Payload and Mission Traceability Matrix</h2>
+					</section>
+					<section data-auto-animate>
+						<h2>Payload</h2>
+					</section>
+					<section data-auto-animate>
+						<h2>Mission Traceability Matrix</h2>
+					</section>
+					<section data-auto-animate>
+						<h3>Mission Traceability Matrix</h3>
+
+						<h4 class="text-start">Mission Goal</h4>
+
+						<p class="text-start px-5">Make a satallite for people on Earth to put items on and observe them</p>
+						<p class="text-start px-5">Provide a cheaper and more flexible space service</p>
+
+					</section>
+					<section data-auto-animate>
+						<h3>Mission Traceability Matrix</h3>
+						<table class="misssion-matrix table-medium">
+							<thead>
+								<tr>
+									<th class="text-center fw-bold" colspan="6">Mission Traceability Matrix</th>
+								</tr>
+								<!-- <tr>
+									<th class="text-center fw-bold" colspan="6">Mission:   Space Memorial</th>
+								</tr> -->
+								<tr>
+									<th rowspan="2" >Mission Objectives</th>
+									<th rowspan="1" >Objectives</th>
+									<th rowspan="2" >Deliverable Requirements</th>
+									<th rowspan="2" >Payload</th>
+									<th rowspan="2" >Payload Requirements</th>
+									<th rowspan="2" >Data Processing Requirements</th>
+								</tr>
+								<tr>
+									<th rowspan="1" >Deliverable</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Send items to space</td>
+									<td>Videos</td>
+									<td>FHD 15sec per costumer a day</td>
+									<td>Display panel</td>
+									<td>2 right triangular space with dimension: 5cm*10cm</td>
+									<td>10 MB per orbit</td>
+								</tr>
+								<tr>
+									<td>Take photos with with item</td>
+									<td>Photos</td>
+									<td>Satallite design lifetime: 1 year</td>
+									<td>Raspberry Pi Camera</td>
+									<td>Vibration should below 1cm Amplitude and 0.05 Hz</td>
+									<td>10 KB command data</td>
+								</tr>
+								<tr>
+									<td>Can upload messages and display on satallite</td>
+									<td>Commercial Profit</td>
+									<td></td>
+									<td>Shooting machenism</td>
+									<td>15 Pin MIPI Camera Serial Interface (CSI-2)</td>
+									<td>100 MB minimum storage</td>
+								</tr>
+								<tr>
+									<td>Provide a space to record video</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>required surface-pointing ability</td>
+									<td>60(MB)*365(day) = 21900(Mb*day) total</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Angular error should be less then 30%</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Level 1: Top Level Requirements</h2>
+					</section>
+					<section>
+						<h3>Top Level Requirements (Functional Requirements)</h3>
+						<table>
+							<thead>
+								<tr>
+								<th>#</th>
+								<th>Refnum.</th>
+								<th>Description</th>
+								<th>Source</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								<th>FR</th>
+								<td>1.REQ.MIS.FR.1</td>
+								<td>The spacecraft shall be able to record videos of user's object with Earth at the quality of FHD, 10 seconds.</td>
+								<td>0.REQ.CML.2</td>
+								</tr>
+								<tr>
+								<th>FR</th>
+								<td>1.REQ.MIS.FR.2</td>
+								<td>The spacecraft shall be able to record videos of user's message displayed with Earth at the quality of FHD, 10 seconds.</td>
+								<td></td>
+								</tr>
+								<tr>
+								<th>FR</th>
+								<td>1.REQ.MIS.FR.3</td>
+								<td>The spacecraft shall be able to measure its direction,  position, velocity and angular velocity. (為了讓衛星拍照時對準地球)</td>
+								<td></td>
+								</tr> 
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Top Level Requirements: Design Constraints</h3>
+						<table style="font-size: 1.5rem;">
+							<thead>
+								<tr>
+								<th>#</th>
+								<th>Refnum.</th>
+								<th>Description</th>
+								<th>Source</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								<th>DC</th>
+								<td>1.REQ.MIS.DC.1</td>
+								<td>The spacecraft shall meet the requirements of a 3U CubeSat as defined by the CubeSat Design Specifications.</td>
+								<td></td>
+								</tr>
+								<tr>
+								<th>DC</th>
+								<td>1.REQ.MIS.DC.2</td>
+								<td>The spacecraft shall send and recieve data to the NCU ground station.</td>
+								<td></td>
+								</tr>
+								<tr>
+								<th>DC</th>
+								<td>1.REQ.MIS.DC.3</td>
+								<td>Orbit altitude shall  between 450 km and 700 km.</td>
+								<td>1.REQ.MIS.DC.1</td>
+								</tr>
+								<tr>
+								<th>DC</th>
+								<td>1.REQ.MIS.DC.4</td>
+								<td>Orbit shall be Sun-synchronous orbit between ... light time (TBD)(Final orbit depends on Launch Vehicle, time, oppotunity)</td>
+								<td></td>
+								</tr>
+								<tr>
+								<th>DC</th>
+								<td></td>
+								<td>The spacecraft shall conform to the requirements specified in the NSPO CubeSat Product Assurance Requirements Document.</td>
+								<td></td>
+								</tr>
+								<tr>
+								<th>DC</th>
+								<td>1.REQ.MIS.DC.5</td>
+								<td>The design lifetime of the spacecraft shall be 18 months.</td>
+								<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Top Level Requirements: Education</h3>
+						<table>
+							<thead>
+							  <tr>
+								<th>#</th>
+								<th>Refnum.</th>
+								<th>Description</th>
+								<th>Source</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<th>EDU</th>
+								<td>1.REQ.EDU.1</td>
+								<td>Students shall design, build, test, and operate the CubeSat.</td>
+								<td></td>
+							  </tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+
+
+				<section>					
+					<section data-auto-animate>
+						<h2>Level 2 <br> System Requirements</h2>
+					</section>
+					<section data-auto-animate>
+						<h4>System Requirements <br> (Functional Requirements)</h4>
+						<table class="table-small">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Refnum.</th>
+									<th>Description</th>
+									<th>Source</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>FR</th>
+									<td></td>
+									<td>The CubeSat shall have six modes: charging mode, Standby mode, TT&C mode, camera mode, safe mode, and phoenix mode.</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td></td>
+									<td>The CubeSat shall have a testing interface to allow ground-based testing and troubleshooting.</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td></td>
+									<td>Electromagnetic interference shall not inhibit CubeSat subsystems from functioning properly.</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td></td>
+									<td>The CubeSat shall have a 3-axis Attitude Determination and Control System (ADCS).</td>
+									<td>1.REQ.MIS.FR.3</td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td></td>
+									<td>The CubeSat shall be able to communicate via UHF.</td>
+									<td>1.REQ.MIS.DC.2
+									1.REQ.MIS.DC.3</td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td></td>
+									<td>The CubeSat shall be able to transmit via S-band.
+									</td>
+									<td>1.REQ.MIS.DC.2
+									1.REQ.MIS.DC.3
+									1.REQ.MIS.FR.1
+									1.REQ.MIS.FR.2</td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td></td>
+									<td>The CubeSat shall be able to receive and transmit from and to the ground station
+									</td>
+									<td>1.REQ.MIS.DC.2
+									1.REQ.MIS.DC.3</td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td></td>
+									<td>The CubeSat shall maintain a power balance in all modes.</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td></td>
+									<td>Electrical subsystems shall all be linked via a common electrical interface.</td>
+									<td>1.REQ.MIS.DC.1</td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td></td>
+									<td>The CubeSat shall maintain survival temperature in all modes for all of the components.</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td></td>
+									<td>The CubeSat shall remain structurally functional.</td>
+									<td>1.REQ.MIS.DC.1</td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td></td>
+									<td>Mission data shall be time tagged by the onboard clock.</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td></td>
+									<td>The CubeSat shall contain an instrument to perform the required commercial activity.</td>
+									<td>1.REQ.MIS.DC.1</td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td></td>
+									<td>Electrical subsystems shall all be able to communicate with each other</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>System Requirements (Performance Requirements)</h3>
+						<table class="table-normal">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Refnum.</th>
+									<th>Description</th>
+									<th>Source</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>PR</th>
+									<td></td>
+									<td>The CubeSat shall be able to re-acquire the sun after 5 minutes out of eclipse.
+									</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>PR</th>
+									<td></td>
+									<td>The CubeSat shall begin commercial operations within 30 days since it arrives its mission orbit.</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>PR</th>
+									<td></td>
+									<td>The CubeSat temperature shall between -40~70 degree Celcius</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>PR</th>
+									<td></td>
+									<td>The CubeSat shall be able to store at least 1 month of data on board.</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>System Requirements <br> (Design Constraints)</h3>
+						<table class="table-normal">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Refnum.</th>
+									<th>Description</th>
+									<th>Source</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>DC</th>
+									<td>2.REQ.SYS.DC.1</td>
+									<td>Each spacecraft subsystem must adhere to its resource budget allocations (power, mass, volume, center of mass)
+									</td>
+									<td>1.REQ.MIS.DC.1</td>
+								</tr>
+								<tr>
+									<th>DC</th>
+									<td>2.REQ.SYS.DC.2</td>
+									<td>The spacecraft shall follow all regulations set forth by the Taiwan National Communications Commission.</td>
+									<td>1.REQ.MIS.DC.2</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Work Distribution</h2>
+						<img src="./src/img/Work Distribution.png">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Subsystem Requirements</h2>
+					</section>
+					<section>
+						<h3>COMM Functional Requirements</h3>
+						<table class="table-normal">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Refnum.</th>
+									<th>Description</th>
+									<th>Source</th>
+								</tr>
+							</thead>
+						  	<tbody>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.COMM.FR.1</td>
+									<td>Have to consider Doppler Shift Effect</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.COMM.FR.2</td>
+									<td>Able to receive commands from ground station</td>
+									<td></td>
+								</tr>  
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.COMM.FR.3</td>
+									<td>Rx can receive amplified electronic wave</td>
+									<td></td>
+								</tr>  
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.COMM.FR.4</td>
+									<td>Receiver can demodulate commands</td>
+									<td></td>
+								</tr>  
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.COMM.FR.5</td>
+									<td>Can response after recieved a command</td>
+									<td></td>
+								</tr>  
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.COMM.FR.6</td>
+									<td>can upload HK data to ground station</td>
+									<td></td>
+								</tr> 
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>ADCS Functional Requirements</h3>
+						<table class="table-normal">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Refnum.</th>
+									<th>Description</th>
+									<th>Source</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.ADCS.FR.1</td>
+									<td>Able to distinguish direction and stable motivation</td>
+									<td>0.REQ.CML.2</td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.ADCS.FR.2</td>
+									<td>Point it's solar panel to the sun</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.ADCS.FR.3</td>
+									<td>senser point to the sun while taking photos</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.ADCS.FR.4</td>
+									<td>Can afford external moment</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.ADCS.FR.5</td>
+									<td>Able to correct position after temperature deformation on satallite</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.ADCS.FR.6</td>
+									<td>Able to fix according to the movement of payload</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.ADCS.FR.7</td>
+									<td>Velocity Vector has to be stable</td>
+									<td></td>
+						  		</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.ADCS.FR.8</td>
+									<td>de-tumbling in 3 days</td>
+									<td></td>
+						  		</tr>
+					      	</tbody>
+					    </table>
+					</section>
+					<section>
+						<h3>C&DH Functional Requirements</h3>
+						<table class="table-normal">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Refnum.</th>
+									<th>Description</th>
+									<th>Source</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.CDH.FR.1</td>
+									<td>Collect and Store Housekeeping data</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.CDH.FR.2</td>
+									<td>Store a month of Housekeeping data</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.CDH.FR.3</td>
+									<td>Able to know time</td>
+									<td></td>
+							  	</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.CDH.FR.4</td>
+									<td>Send and receive command form ADCS</td>
+									<td></td>
+							  	</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.CDH.FR.5</td>
+									<td>Send and receive command form COMM</td>
+									<td></td>
+							  	</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.CDH.FR.6</td>
+									<td>Send and receive command form P/L</td>
+									<td></td>
+							  	</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.CDH.FR.7</td>
+									<td>Change mode according to different battery left</td>
+									<td></td>
+							  	</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>EPS Functional Requirements</h3>
+						<table class="table-normal">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Refnum.</th>
+									<th>Description</th>
+									<th>Source</th>
+								</tr>
+							</thead>
+						  	<tbody>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.EPS.FR.1</td>
+									<td>Solar panel can charge</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.EPS.FR.2</td>
+									<td>battery cell can store electricity</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.EPS.FR.3</td>
+									<td>interfaces to other subsystems</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.EPS.FR.4</td>
+									<td>30% of total battery storage can afford every subsystem's operation</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.EPS.FR.5</td>
+									<td>Battery cell as to be stable on structure</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.EPS.FR.6</td>
+									<td>Able to store enough power before taking photos</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.EPS.FR.7</td>
+									<td>Able to send senser datas to CDH</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.EPS.FR.8</td>
+									<td>provide power after poping out POD</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Structure Functional Requirements</h3>
+						<table class="table-small">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Refnum.</th>
+									<th>Description</th>
+									<th>Source</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.SS.FR.1</td>
+									<td>Non-metallic materials's Total Mass Loss (TML) and Collected Volatile Condensable Material (CVCM) &lt; 0.1% in vaccumed environment</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.SS.FR.2</td>
+									<td>magnetic field below 0.5Gauss</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.SS.FR.3</td>
+									<td>Ventilable Volume per area &lt; 2000 inches</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.SS.FR.4</td>
+									<td>Rails &ge; 8.5mm, surface roughness &lt; 1.6µm, edge's radius of curvature &ge; 1mm</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.SS.FR.5</td>
+									<td>two points of rails on &#177; Z required minimum contact area 6.5mm*6.5mm</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.SS.FR.6</td>
+									<td>at least 75% of rails have to contact with P-POD's rails</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.SS.FR.7</td>
+									<td>Centroid must be located within 7mm radius of Geometric center</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.SS.FR.8</td>
+									<td>Aluminum 7075, 6061, 5005, and/or 5052 should be the main component</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.SS.FR.9</td>
+									<td>surface and rail have to hard anodizing, thickness &ge; 10µm</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.SS.FR.10</td>
+									<td>every component's nature frequency have to be away from that of the rocket's</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.SS.FR.11</td>
+									<td>structure have to expend after popoing out P-POD</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.SS.FR.12</td>
+									<td>any component is not allow to exceed 6.5mm compare to the rail datum plane</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>FR</th>
+									<td>3.REQ.SS.FR.13</td>
+									<td>every component have to fill a DAR and obey waiver process</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Budgets</h2>
+					</section>
+					<section>
+						<h3>Mass Budget</h3>
+						<table class="table-normal">
+							<thead>
+								<tr>
+									<th>Subsystem</th>
+									<th>Module</th>
+									<th>Mass</th>
+									<th>Dimension</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>ADCS</th>
+									<td>CUBEADCS 3-axis</td>
+									<td>554g</td>
+									<td>90*96*75mm </td>
+								</tr>
+								<tr>
+									<th>EPS</th>
+									<td>EPS I Plus </td>
+									<td>298g</td>
+									<td></td>
+								</tr>
+								    <th>EPS</th>
+									<td>Solar Panel</td>
+									<td>508g</td>
+									<td></td>
+								<tr>
+									<th>COMM</th>
+									<td>UHF Transceiver II</td>
+									<td>94g</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>COMM</th>
+									<td>ISIS High Data Rate S-Band Transmitter</td>
+									<td> 50g </td>
+									<td>98.81 x 93.26 x 14.52 mm</td>
+								</tr>
+								<tr>
+									<th>COMM</th>
+									<td>ISIS S-Band Patch Antenna</td>
+									<td> 120g</td>
+									<td>80 x 80 x 13.8 mm</td>
+								</tr>
+								<tr>
+									<th>OBDH</th>
+									<td>raspberry pi pico</td>
+									<td>9g</td>
+									<td>21 mm × 51 mm</td>
+								</tr>
+								<tr>
+									<th>Payload</th>
+									<td>8MP Raspberry Pi Camera Module (v2)</td>
+									<td>3g x 2</td>
+									<td>23 x 25 x 9mm</td>
+								</tr>
+								<tr>
+									<th>Structure</th>
+									<td>3-Unit Cubesat Structure</td>
+									<td>304.3g</td>
+									<td>100 x 100 x 340.5 mm</td>
+								</tr>
+								<tr>
+									<th>Total</th>
+									<td></td>
+									<td>1946.3g</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>Margin (30%)</th>
+									<td></td>
+									<td>1946.3g +- 583.89g</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Money Budget</h3>
+						<table class="table-normal">
+							<thead>
+								<tr>
+									<th>Subsystem</th>
+									<th>Module</th>
+									<th>Price (NTD)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>ADCS</th>
+									<td>CUBEADCS 3-axis</td>
+									<td>1043489</td>
+								</tr>
+								<tr>
+									<th>EPS</th>
+									<td>EPS I Plus</td>
+									<td>122735</td>
+								</tr>
+								<tr>
+									<th>COMM</th>
+									<td>UHF Transceiver II</td>
+									<td>128346</td>
+								</tr>
+								<tr>
+									<th>COMM</th>
+									<td>ISIS High Data Rate S-Band Transmitter</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>COMM</th>
+									<td>ISIS S-Band Patch Antenna</td>
+									<td>71297</td>
+								</tr>
+								<tr>
+									<th>Structure</th>
+									<td>3-Unit Cubesat Structure</td>
+									<td>129332</td>
+								</tr>
+								<tr>
+									<th>OBDH</th>
+									<td>raspberry pi pico</td>
+									<td>120</td>
+								</tr>
+								<tr>
+									<th>Payload</th>
+									<td>8MP Raspberry Pi Camera Module (v2)</td>
+									<td>1100 x 2</td>
+								</tr>
+								<tr>
+									<th>Launch Fee</th>
+									<td></td>
+									<td>5719602</td>
+								</tr>
+								<tr>
+									<th>Total</th>
+									<td></td>
+									<td>7217121</td>
+								</tr>
+								<tr>
+									<th>Margin (30%)</th>
+									<td></td>
+									<td>7217121 +- 2165136.3</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Power Budget</h2>
+					</section>
+					<section>
+						<h3>Charging Mode</h3>
+						<table class="table-normal">
+							<thead>
+								<tr>
+									<th>Object</th>
+									<th>System</th>
+									<th>peak</th>
+									<th>nominal</th>
+									<th>One orbit: duty cycle (%)</th>
+									<th>One orbit: peak</th>
+									<th>>One orbit: nominal</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="f8503172-c33d-4390-bd30-b34ca6360903">
+									<td class="cell-x`:~">CUBEADCS 3-AXIS</td>
+									<td class="cell-title">ADCS</td>
+									<td class="cell-ElMQ">2.295</td>
+									<td class="cell-`tge">0.571</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">2.295</td>
+									<td class="cell-BI]F">0.571</td>
+								</tr>
+								<tr id="b693c46e-176e-4d26-aab5-eab4c48f304f">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/EPS-I-Plus-c33dc92d774b4c67ad55f0352a56376e">EPS I Plus</a>
+									</td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/EPS-b693c46e176e4d26aab5eab4c48f304f">EPS</a></td>
+									<td class="cell-ElMQ">3</td>
+									<td class="cell-`tge">2</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">3</td>
+									<td class="cell-BI]F">2</td>
+								</tr>
+								<tr id="6bfd4abd-4ecd-4a69-bd55-f4be5f5d3183">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/UHF-TRANSCEIVER-II-Tx-9c52a5704d5741ec87c69b34432f8cdf">UHF
+											TRANSCEIVER II (Tx)</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-6bfd4abd4ecd4a69bd55f4be5f5d3183">COMM</a></td>
+									<td class="cell-ElMQ">2</td>
+									<td class="cell-`tge">1</td>
+									<td class="cell-bHx{">2.5</td>
+									<td class="cell-{v_G">0.05</td>
+									<td class="cell-BI]F">0.025</td>
+								</tr>
+								<tr id="8f14de2f-f905-4965-9c66-a938d290d214">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/UHF-TRANSCEIVER-II-Rx-5c2ddc4af62c446e86281b2f436c45f0">UHF
+											TRANSCEIVER II (Rx)</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-8f14de2ff90549659c66a938d290d214">COMM</a></td>
+									<td class="cell-ElMQ">0.1</td>
+									<td class="cell-`tge">0.0825</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">0.1</td>
+									<td class="cell-BI]F">0.0825</td>
+								</tr>
+								<tr id="d59d2c84-6b9b-4849-ab86-980daeb416ed">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/S-band-Patch-Antenna-102566bbd8184751a237b4c7eeeb28c1">S-band
+											Patch Antenna</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-d59d2c846b9b4849ab86980daeb416ed">COMM</a></td>
+									<td class="cell-ElMQ">3</td>
+									<td class="cell-`tge">2</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="802373bb-3c2b-49ba-b735-c2f74ab2d880">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/ISIS-High-Data-Rate-S-Band-Transmitter-d0dda7602b2f4b408fb8c18e18b58f0b">ISIS
+											High Data Rate S-Band Transmitter</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-802373bb3c2b49bab735c2f74ab2d880">COMM</a></td>
+									<td class="cell-ElMQ">16</td>
+									<td class="cell-`tge">15</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="4998fe7e-f08d-4497-926a-ecd7006bd6e1">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/raspberry-pi-pico-db6c6c46446e4235821f48842845df45">raspberry
+											pi pico</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/CDH-4998fe7ef08d4497926aecd7006bd6e1">CDH</a></td>
+									<td class="cell-ElMQ">15</td>
+									<td class="cell-`tge">10</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="9b637149-7470-4ed8-90a8-61e6f709bed2">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/8MP-Raspberry-Pi-Camera-Module-v2-2-9bd17f878dda43c685b8d7dfee65bd01">8MP
+											Raspberry Pi Camera Module (v2) *2</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/P-L-9b63714974704ed890a861e6f709bed2">P/L</a></td>
+									<td class="cell-ElMQ">5</td>
+									<td class="cell-`tge">4</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="4f8a1e2f-844c-40b1-b063-b615ffab364e">
+									<td class="cell-x`:~">Total</td>
+									<td class="cell-title"></td>
+									<td class="cell-ElMQ"></td>
+									<td class="cell-`tge"></td>
+									<td class="cell-bHx{"></td>
+									<td class="cell-{v_G">5.445</td>
+									<td class="cell-BI]F">2.6785</td>
+								</tr>
+								<tr id="4f8a1e2f-844c-40b1-b063-b615ffab364e">
+									<td class="cell-x`:~"></td>
+									<td class="cell-title"></td>
+									<td class="cell-ElMQ"></td>
+									<td class="cell-`tge"></td>
+									<td class="cell-bHx{">30% reserved</td>
+									<td class="cell-{v_G">3.8115</td>
+									<td class="cell-BI]F">1.87495</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Camera Mode</h3>
+						<table class="table-normal">
+							<thead>
+								<tr>
+									<th>Object</th>
+									<th>System</th>
+									<th>peak</th>
+									<th>nominal</th>
+									<th>One orbit: duty cycle (%)</th>
+									<th>One orbit: peak</th>
+									<th>>One orbit: nominal</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="fa0493b8-abca-4e1d-9d89-d1583f991696">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/CUBEADCS-3-AXIS-eab813c3fdf34bd3a10edf37ad9a712b">CUBEADCS
+											3-AXIS</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/ADCS-fa0493b8abca4e1d9d89d1583f991696">ADCS</a></td>
+									<td class="cell-ElMQ">2.295</td>
+									<td class="cell-`tge">2.295</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">2.295</td>
+									<td class="cell-BI]F">2.295</td>
+								</tr>
+								<tr id="37ae4384-ac95-4ebd-a1bc-fe6acaed463a">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/EPS-I-Plus-c33dc92d774b4c67ad55f0352a56376e">EPS I Plus</a>
+									</td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/EPS-37ae4384ac954ebda1bcfe6acaed463a">EPS</a></td>
+									<td class="cell-ElMQ">3</td>
+									<td class="cell-`tge">3</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">3</td>
+									<td class="cell-BI]F">3</td>
+								</tr>
+								<tr id="93ae6ce6-5573-4a2b-a80f-ce33ae3c93ea">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/UHF-TRANSCEIVER-II-Tx-9c52a5704d5741ec87c69b34432f8cdf">UHF
+											TRANSCEIVER II (Tx)</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-93ae6ce655734a2ba80fce33ae3c93ea">COMM</a></td>
+									<td class="cell-ElMQ">2</td>
+									<td class="cell-`tge">2</td>
+									<td class="cell-bHx{">2.5</td>
+									<td class="cell-{v_G">0.05</td>
+									<td class="cell-BI]F">0.05</td>
+								</tr>
+								<tr id="4815e443-5601-40f2-98b0-5b9038ae15e4">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/UHF-TRANSCEIVER-II-Rx-5c2ddc4af62c446e86281b2f436c45f0">UHF
+											TRANSCEIVER II (Rx)</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-4815e443560140f298b05b9038ae15e4">COMM</a></td>
+									<td class="cell-ElMQ">0.1</td>
+									<td class="cell-`tge">0.1</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">0.1</td>
+									<td class="cell-BI]F">0.1</td>
+								</tr>
+								<tr id="37ddfdc2-75ec-4f40-8708-3991ce3b3e3b">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/S-band-Patch-Antenna-102566bbd8184751a237b4c7eeeb28c1">S-band
+											Patch Antenna</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-37ddfdc275ec4f4087083991ce3b3e3b">COMM</a></td>
+									<td class="cell-ElMQ">3</td>
+									<td class="cell-`tge">3</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="f834af4f-d34d-446d-aaea-11a0fd92a187">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/ISIS-High-Data-Rate-S-Band-Transmitter-d0dda7602b2f4b408fb8c18e18b58f0b">ISIS
+											High Data Rate S-Band Transmitter</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-f834af4fd34d446daaea11a0fd92a187">COMM</a></td>
+									<td class="cell-ElMQ">16</td>
+									<td class="cell-`tge">16</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="c44e1fe3-1674-4d54-9304-fb329b596399">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/raspberry-pi-pico-db6c6c46446e4235821f48842845df45">raspberry
+											pi pico</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/CDH-c44e1fe316744d549304fb329b596399">CDH</a></td>
+									<td class="cell-ElMQ">15</td>
+									<td class="cell-`tge">15</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">15</td>
+									<td class="cell-BI]F">15</td>
+								</tr>
+								<tr id="33dfa47a-a285-4fb7-ad81-20c22f11ff6b">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/8MP-Raspberry-Pi-Camera-Module-v2-2-9bd17f878dda43c685b8d7dfee65bd01">8MP
+											Raspberry Pi Camera Module (v2) *2</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/P-L-33dfa47aa2854fb7ad8120c22f11ff6b">P/L</a></td>
+									<td class="cell-ElMQ">5</td>
+									<td class="cell-`tge">5</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">5</td>
+									<td class="cell-BI]F">5</td>
+								</tr>
+								<tr id="4f8a1e2f-844c-40b1-b063-b615ffab364e">
+									<td class="cell-x`:~">Total</td>
+									<td class="cell-title"></td>
+									<td class="cell-ElMQ"></td>
+									<td class="cell-`tge"></td>
+									<td class="cell-bHx{"></td>
+									<td class="cell-{v_G">25.445</td>
+									<td class="cell-BI]F">25.445</td>
+								</tr>
+								<tr id="4f8a1e2f-844c-40b1-b063-b615ffab364e">
+									<td class="cell-x`:~"></td>
+									<td class="cell-title"></td>
+									<td class="cell-ElMQ"></td>
+									<td class="cell-`tge"></td>
+									<td class="cell-bHx{">30% reserved</td>
+									<td class="cell-{v_G">17.8115</td>
+									<td class="cell-BI]F">17.8115</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>TT&C Mode</h3>
+						<table class="table-normal">
+							<thead>
+								<tr>
+									<th>Object</th>
+									<th>System</th>
+									<th>peak</th>
+									<th>nominal</th>
+									<th>One orbit: duty cycle (%)</th>
+									<th>One orbit: peak</th>
+									<th>>One orbit: nominal</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="0b8d877b-ab49-4d06-b8bb-db8974cad733">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/CUBEADCS-3-AXIS-eab813c3fdf34bd3a10edf37ad9a712b">CUBEADCS
+											3-AXIS</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/ADCS-0b8d877bab494d06b8bbdb8974cad733">ADCS</a></td>
+									<td class="cell-ElMQ">2.295</td>
+									<td class="cell-`tge">0.571</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">2.295</td>
+									<td class="cell-BI]F">0.571</td>
+								</tr>
+								<tr id="defbeb3a-3803-4428-8467-d540f94c09b9">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/EPS-I-Plus-c33dc92d774b4c67ad55f0352a56376e">EPS I Plus</a>
+									</td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/EPS-defbeb3a380344288467d540f94c09b9">EPS</a></td>
+									<td class="cell-ElMQ">3</td>
+									<td class="cell-`tge">2</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">3</td>
+									<td class="cell-BI]F">2</td>
+								</tr>
+								<tr id="7f4f5aa7-5d3f-4deb-b53e-f1b7985485fe">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/UHF-TRANSCEIVER-II-Tx-9c52a5704d5741ec87c69b34432f8cdf">UHF
+											TRANSCEIVER II (Tx)</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-7f4f5aa75d3f4debb53ef1b7985485fe">COMM</a></td>
+									<td class="cell-ElMQ">2</td>
+									<td class="cell-`tge">1</td>
+									<td class="cell-bHx{">2.5</td>
+									<td class="cell-{v_G">0.05</td>
+									<td class="cell-BI]F">0.025</td>
+								</tr>
+								<tr id="4bfbdd4b-93d2-4d3d-9273-2b1aa4a20606">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/UHF-TRANSCEIVER-II-Rx-5c2ddc4af62c446e86281b2f436c45f0">UHF
+											TRANSCEIVER II (Rx)</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-4bfbdd4b93d24d3d92732b1aa4a20606">COMM</a></td>
+									<td class="cell-ElMQ">0.1</td>
+									<td class="cell-`tge">0.0825</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">0.1</td>
+									<td class="cell-BI]F">0.0825</td>
+								</tr>
+								<tr id="0a5c9872-62c8-4820-ae3b-d349863ddf0f">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/S-band-Patch-Antenna-102566bbd8184751a237b4c7eeeb28c1">S-band
+											Patch Antenna</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-0a5c987262c84820ae3bd349863ddf0f">COMM</a></td>
+									<td class="cell-ElMQ">3</td>
+									<td class="cell-`tge">2</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">3</td>
+									<td class="cell-BI]F">2</td>
+								</tr>
+								<tr id="a60b3b99-9583-4430-9c42-2db5a2f86e92">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/ISIS-High-Data-Rate-S-Band-Transmitter-d0dda7602b2f4b408fb8c18e18b58f0b">ISIS
+											High Data Rate S-Band Transmitter</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-a60b3b99958344309c422db5a2f86e92">COMM</a></td>
+									<td class="cell-ElMQ">16</td>
+									<td class="cell-`tge">15</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">16</td>
+									<td class="cell-BI]F">15</td>
+								</tr>
+								<tr id="a718561b-2f5c-41dc-93ff-68d2d1e9cccf">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/raspberry-pi-pico-db6c6c46446e4235821f48842845df45">raspberry
+											pi pico</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/CDH-a718561b2f5c41dc93ff68d2d1e9cccf">CDH</a></td>
+									<td class="cell-ElMQ">15</td>
+									<td class="cell-`tge">10</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="4f8a1e2f-844c-40b1-b063-b615ffab364e">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/8MP-Raspberry-Pi-Camera-Module-v2-2-9bd17f878dda43c685b8d7dfee65bd01">8MP
+											Raspberry Pi Camera Module (v2) *2</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/P-L-4f8a1e2f844c40b1b063b615ffab364e">P/L</a></td>
+									<td class="cell-ElMQ">5</td>
+									<td class="cell-`tge">4</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="4f8a1e2f-844c-40b1-b063-b615ffab364e">
+									<td class="cell-x`:~">Total</td>
+									<td class="cell-title"></td>
+									<td class="cell-ElMQ"></td>
+									<td class="cell-`tge"></td>
+									<td class="cell-bHx{"></td>
+									<td class="cell-{v_G">24.445</td>
+									<td class="cell-BI]F">19.6785</td>
+								</tr>
+								<tr id="4f8a1e2f-844c-40b1-b063-b615ffab364e">
+									<td class="cell-x`:~"></td>
+									<td class="cell-title"></td>
+									<td class="cell-ElMQ"></td>
+									<td class="cell-`tge"></td>
+									<td class="cell-bHx{">30% reserved</td>
+									<td class="cell-{v_G">17.1115</td>
+									<td class="cell-BI]F">13.77495</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Standby Mode</h3>
+						<table class="table-normal">
+							<thead>
+								<tr>
+									<th>Object</th>
+									<th>System</th>
+									<th>peak</th>
+									<th>nominal</th>
+									<th>One orbit: duty cycle (%)</th>
+									<th>One orbit: peak</th>
+									<th>>One orbit: nominal</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="2e437709-8dd2-456d-a338-fb16fd936d30">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/CUBEADCS-3-AXIS-eab813c3fdf34bd3a10edf37ad9a712b">CUBEADCS
+											3-AXIS</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/ADCS-2e4377098dd2456da338fb16fd936d30">ADCS</a></td>
+									<td class="cell-ElMQ">2.295</td>
+									<td class="cell-`tge">0.571</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="3dd4f766-135e-4ecf-84a3-21241f69905f">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/EPS-I-Plus-c33dc92d774b4c67ad55f0352a56376e">EPS I Plus</a>
+									</td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/EPS-3dd4f766135e4ecf84a321241f69905f">EPS</a></td>
+									<td class="cell-ElMQ">3</td>
+									<td class="cell-`tge">2</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">3</td>
+									<td class="cell-BI]F">2</td>
+								</tr>
+								<tr id="2f7b2ec5-f04f-48b6-89f3-d3ac1218fcc8">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/UHF-TRANSCEIVER-II-Tx-9c52a5704d5741ec87c69b34432f8cdf">UHF
+											TRANSCEIVER II (Tx)</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-2f7b2ec5f04f48b689f3d3ac1218fcc8">COMM</a></td>
+									<td class="cell-ElMQ">2</td>
+									<td class="cell-`tge">1</td>
+									<td class="cell-bHx{">2.5</td>
+									<td class="cell-{v_G">0.05</td>
+									<td class="cell-BI]F">0.025</td>
+								</tr>
+								<tr id="93753550-6d55-4445-a250-ca69eff2e325">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/UHF-TRANSCEIVER-II-Rx-5c2ddc4af62c446e86281b2f436c45f0">UHF
+											TRANSCEIVER II (Rx)</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-937535506d554445a250ca69eff2e325">COMM</a></td>
+									<td class="cell-ElMQ">0.1</td>
+									<td class="cell-`tge">0.0825</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">0.1</td>
+									<td class="cell-BI]F">0.0825</td>
+								</tr>
+								<tr id="8e50bb2c-3f97-4d14-99f3-ad88d5e6a082">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/S-band-Patch-Antenna-102566bbd8184751a237b4c7eeeb28c1">S-band
+											Patch Antenna</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-8e50bb2c3f974d1499f3ad88d5e6a082">COMM</a></td>
+									<td class="cell-ElMQ">3</td>
+									<td class="cell-`tge">2</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="450d9c77-ddd5-487e-a496-06714e59f2bd">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/ISIS-High-Data-Rate-S-Band-Transmitter-d0dda7602b2f4b408fb8c18e18b58f0b">ISIS
+											High Data Rate S-Band Transmitter</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-450d9c77ddd5487ea49606714e59f2bd">COMM</a></td>
+									<td class="cell-ElMQ">16</td>
+									<td class="cell-`tge">15</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="f5f23e0f-25d1-40b4-afc5-5effc4cc6cf0">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/raspberry-pi-pico-db6c6c46446e4235821f48842845df45">raspberry
+											pi pico</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/CDH-f5f23e0f25d140b4afc55effc4cc6cf0">CDH</a></td>
+									<td class="cell-ElMQ">15</td>
+									<td class="cell-`tge">10</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="cae63cf9-6ea8-4db7-b018-4838ab6bdf01">
+									<td class="cell-x`:~"><a
+											href="https://www.notion.so/8MP-Raspberry-Pi-Camera-Module-v2-2-9bd17f878dda43c685b8d7dfee65bd01">8MP
+											Raspberry Pi Camera Module (v2) *2</a></td>
+									<td class="cell-title"><a
+											href="https://www.notion.so/P-L-cae63cf96ea84db7b0184838ab6bdf01">P/L</a></td>
+									<td class="cell-ElMQ">5</td>
+									<td class="cell-`tge">4</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="4f8a1e2f-844c-40b1-b063-b615ffab364e">
+									<td class="cell-x`:~">Total</td>
+									<td class="cell-title"></td>
+									<td class="cell-ElMQ"></td>
+									<td class="cell-`tge"></td>
+									<td class="cell-bHx{"></td>
+									<td class="cell-{v_G">3.15</td>
+									<td class="cell-BI]F">2.1075</td>
+								</tr>
+								<tr id="4f8a1e2f-844c-40b1-b063-b615ffab364e">
+									<td class="cell-x`:~"></td>
+									<td class="cell-title"></td>
+									<td class="cell-ElMQ"></td>
+									<td class="cell-`tge"></td>
+									<td class="cell-bHx{">30% reserved</td>
+									<td class="cell-{v_G">2.205</td>
+									<td class="cell-BI]F">1.47525</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Safe Mode</h3>
+						<table class="table-normal">
+							<thead>
+								<tr>
+									<th>Object</th>
+									<th>System</th>
+									<th>peak</th>
+									<th>nominal</th>
+									<th>One orbit: duty cycle (%)</th>
+									<th>One orbit: peak</th>
+									<th>>One orbit: nominal</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="a5e4a8a7-d093-4a20-b0c0-f047939c0117">
+									<td class="cell-x`:~">CUBEADCS 3-AXIS</td>
+									<td class="cell-title">ADCS</td>
+									<td class="cell-ElMQ">2.295</td>
+									<td class="cell-`tge">0.571</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">2.295</td>
+									<td class="cell-BI]F">0.571</td>
+								</tr>
+								<tr id="d757299c-8975-42d6-9b71-32d911d1c7df">
+									<td class="cell-x`:~">EPS I Plus</td>
+									<td class="cell-title">EPS</td>
+									<td class="cell-ElMQ">3</td>
+									<td class="cell-`tge">2</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">3</td>
+									<td class="cell-BI]F">2</td>
+								</tr>
+								<tr id="0b03d680-cc85-4006-b426-284cabf67707">
+									<td class="cell-x`:~">UHF TRANSCEIVER II (Tx)</td>
+									<td class="cell-title">COMM</td>
+									<td class="cell-ElMQ">2</td>
+									<td class="cell-`tge">1</td>
+									<td class="cell-bHx{">2.5</td>
+									<td class="cell-{v_G">0.05</td>
+									<td class="cell-BI]F">0.025</td>
+								</tr>
+								<tr id="2986080b-6383-4608-98da-c6869b808560">
+									<td class="cell-x`:~">UHF TRANSCEIVER II (Rx)</td>
+									<td class="cell-title">COMM</td>
+									<td class="cell-ElMQ">0.1</td>
+									<td class="cell-`tge">0.0825</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">0.1</td>
+									<td class="cell-BI]F">0.0825</td>
+								</tr>
+								<tr id="3e23faa1-e5b1-4684-9ebe-7a182fa1bdb2">
+									<td class="cell-x`:~">UHF ANTENNA III</td>
+									<td class="cell-title">COMM</td>
+									<td class="cell-ElMQ">3</td>
+									<td class="cell-`tge">2</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="1254a6f1-c15e-409d-b375-10f1b8d1da3d">
+									<td class="cell-x`:~">ISIS High Data Rate S-Band Transmitter</td>
+									<td class="cell-title">COMM</td>
+									<td class="cell-ElMQ">16</td>
+									<td class="cell-`tge">15</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="a824f050-67ab-425b-95fc-356957057c33">
+									<td class="cell-x`:~">raspberry pi pico</td>
+									<td class="cell-title">CDH</td>
+									<td class="cell-ElMQ">15</td>
+									<td class="cell-`tge">10</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="f60a241c-0032-4fce-8032-fe2a74bcb23e">
+									<td class="cell-x`:~">8MP Raspberry Pi Camera Module (v2) *2</td>
+									<td class="cell-title">P/L</td>
+									<td class="cell-ElMQ">5</td>
+									<td class="cell-`tge">4</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="4f8a1e2f-844c-40b1-b063-b615ffab364e">
+									<td class="cell-x`:~">Total</td>
+									<td class="cell-title"></td>
+									<td class="cell-ElMQ"></td>
+									<td class="cell-`tge"></td>
+									<td class="cell-bHx{"></td>
+									<td class="cell-{v_G">5.445</td>
+									<td class="cell-BI]F">2.6785</td>
+								</tr>
+								<tr id="4f8a1e2f-844c-40b1-b063-b615ffab364e">
+									<td class="cell-x`:~"></td>
+									<td class="cell-title"></td>
+									<td class="cell-ElMQ"></td>
+									<td class="cell-`tge"></td>
+									<td class="cell-bHx{">30% reserved</td>
+									<td class="cell-{v_G">3.8115</td>
+									<td class="cell-BI]F">1.87495</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Phoenix Mode</h3>
+						<table class="table-normal">
+							<thead>
+								<tr>
+									<th>Object</th>
+									<th>System</th>
+									<th>peak</th>
+									<th>nominal</th>
+									<th>One orbit: duty cycle (%)</th>
+									<th>One orbit: peak</th>
+									<th>>One orbit: nominal</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="fead85e4-c431-4601-a85c-b25106260b7f">
+									<td class="cell-x`:~">CUBEADCS3-AXIS</td>
+									<td class="cell-title">ADCS</td>
+									<td class="cell-ElMQ">2.295</td>
+									<td class="cell-`tge">0.571</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="d1752565-5d46-4aa6-b463-98ac0ffdbc45">
+									<td class="cell-x`:~">EPS I Plus</td>
+									<td class="cell-title">EPS</td>
+									<td class="cell-ElMQ">3</td>
+									<td class="cell-`tge">2</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">3</td>
+									<td class="cell-BI]F">2</td>
+								</tr>
+								<tr id="a499776d-9b8e-4e09-81b9-c8a8c0655817">
+									<td class="cell-x`:~">UHF TRANSCEIVER II (Tx)</td>
+									<td class="cell-title">COMM</td>
+									<td class="cell-ElMQ">2</td>
+									<td class="cell-`tge">1</td>
+									<td class="cell-bHx{">2.5</td>
+									<td class="cell-{v_G">0.05</td>
+									<td class="cell-BI]F">0.025</td>
+								</tr>
+								<tr id="92e82911-de91-45f4-8591-e6d6db7713cc">
+									<td class="cell-x`:~">UHF TRANSCEIVER II (Rx)</td>
+									<td class="cell-title">COMM</td>
+									<td class="cell-ElMQ">0.1</td>
+									<td class="cell-`tge">0.0825</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">0.1</td>
+									<td class="cell-BI]F">0.0825</td>
+								</tr>
+								<tr id="27cffcbf-49ff-4a34-9b33-d1bd7a9af49b">
+									<td class="cell-x`:~">S-band Patch Antenna</td>
+									<td class="cell-title">COMM</td>
+									<td class="cell-ElMQ">3</td>
+									<td class="cell-`tge">2</td>
+									<td class="cell-bHx{">100</td>
+									<td class="cell-{v_G">3</td>
+									<td class="cell-BI]F">2</td>
+								</tr>
+								<tr id="dcb44184-268a-4a13-a1c0-56146a9f6782">
+									<td class="cell-x`:~">ISIS High Data Rate S-Band Transmitter</td>
+									<td class="cell-title">COMM</td>
+									<td class="cell-ElMQ">16</td>
+									<td class="cell-`tge">15</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="6181e12a-1201-442a-8f69-b75935fecee0">
+									<td class="cell-x`:~">raspberry pi pico</td>
+									<td class="cell-title">CDH</td>
+									<td class="cell-ElMQ">15</td>
+									<td class="cell-`tge">10</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="a773fd6c-2560-4c7f-8b5c-1deca74c9608">
+									<td class="cell-x`:~">8MP Raspberry Pi Camera Module (v2) *2</td>
+									<td class="cell-title">P/L</td>
+									<td class="cell-ElMQ">5</td>
+									<td class="cell-`tge">4</td>
+									<td class="cell-bHx{">0</td>
+									<td class="cell-{v_G">0</td>
+									<td class="cell-BI]F">0</td>
+								</tr>
+								<tr id="4f8a1e2f-844c-40b1-b063-b615ffab364e">
+									<td class="cell-x`:~">Total</td>
+									<td class="cell-title"></td>
+									<td class="cell-ElMQ"></td>
+									<td class="cell-`tge"></td>
+									<td class="cell-bHx{"></td>
+									<td class="cell-{v_G">6.15</td>
+									<td class="cell-BI]F">4.1075</td>
+								</tr>
+								<tr id="4f8a1e2f-844c-40b1-b063-b615ffab364e">
+									<td class="cell-x`:~"></td>
+									<td class="cell-title"></td>
+									<td class="cell-ElMQ"></td>
+									<td class="cell-`tge"></td>
+									<td class="cell-bHx{">30% reserved</td>
+									<td class="cell-{v_G">4.305</td>
+									<td class="cell-BI]F">2.87525</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Power Consumption (per orbit)</h2>
+					</section>
+					<section>
+						<h3>Peak Power Consumption</h3>
+						<table>
+							<thead>
+								<tr>
+									<th><span class="icon property-icon"><svg viewBox="0 0 14 14"
+												style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden"
+												class="typesTitle">
+												<path
+													d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z">
+												</path>
+											</svg></span>Name</th>
+									<th><span class="icon property-icon"><svg viewBox="0 0 14 14"
+												style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden"
+												class="typesNumber">
+												<path
+													d="M4.46191,0 C3.8667,0 3.38428,0.482422 3.38428,1.07751 L3.38428,3.38425 L1.07764,3.38425 C0.482422,3.38425 0,3.86667 0,4.46179 C0,5.05688 0.482422,5.53931 1.07764,5.53931 L3.38428,5.53931 L3.38428,8.46063 L1.07764,8.46063 C0.482422,8.46063 0,8.94308 0,9.53818 C0,10.1333 0.482422,10.6157 1.07764,10.6157 L3.38428,10.6157 L3.38428,12.9224 C3.38428,13.5175 3.8667,13.9999 4.46191,13.9999 C5.05664,13.9999 5.53906,13.5175 5.53906,12.9224 L5.53906,10.6157 L8.46045,10.6157 L8.46045,12.9224 C8.46045,13.5175 8.94287,13.9999 9.53809,13.9999 C10.1333,13.9999 10.6157,13.5175 10.6157,12.9224 L10.6157,10.6157 L12.9224,10.6157 C13.5176,10.6157 14,10.1333 14,9.53818 C14,8.94308 13.5176,8.46063 12.9224,8.46063 L10.6157,8.46063 L10.6157,5.53931 L12.9224,5.53931 C13.5176,5.53931 14,5.05688 14,4.46179 C14,3.86667 13.5176,3.38425 12.9224,3.38425 L10.6157,3.38425 L10.6157,1.07751 C10.6157,0.482422 10.1333,0 9.53809,0 C8.94287,0 8.46045,0.482422 8.46045,1.07751 L8.46045,3.38425 L5.53906,3.38425 L5.53906,1.07751 C5.53906,0.482422 5.05664,0 4.46191,0 Z M5.53906,8.46063 L5.53906,5.53931 L8.46045,5.53931 L8.46045,8.46063 L5.53906,8.46063 Z">
+												</path>
+											</svg></span>Peak</th>
+									<th><span class="icon property-icon"><svg viewBox="0 0 14 14"
+												style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden"
+												class="typesNumber">
+												<path
+													d="M4.46191,0 C3.8667,0 3.38428,0.482422 3.38428,1.07751 L3.38428,3.38425 L1.07764,3.38425 C0.482422,3.38425 0,3.86667 0,4.46179 C0,5.05688 0.482422,5.53931 1.07764,5.53931 L3.38428,5.53931 L3.38428,8.46063 L1.07764,8.46063 C0.482422,8.46063 0,8.94308 0,9.53818 C0,10.1333 0.482422,10.6157 1.07764,10.6157 L3.38428,10.6157 L3.38428,12.9224 C3.38428,13.5175 3.8667,13.9999 4.46191,13.9999 C5.05664,13.9999 5.53906,13.5175 5.53906,12.9224 L5.53906,10.6157 L8.46045,10.6157 L8.46045,12.9224 C8.46045,13.5175 8.94287,13.9999 9.53809,13.9999 C10.1333,13.9999 10.6157,13.5175 10.6157,12.9224 L10.6157,10.6157 L12.9224,10.6157 C13.5176,10.6157 14,10.1333 14,9.53818 C14,8.94308 13.5176,8.46063 12.9224,8.46063 L10.6157,8.46063 L10.6157,5.53931 L12.9224,5.53931 C13.5176,5.53931 14,5.05688 14,4.46179 C14,3.86667 13.5176,3.38425 12.9224,3.38425 L10.6157,3.38425 L10.6157,1.07751 C10.6157,0.482422 10.1333,0 9.53809,0 C8.94287,0 8.46045,0.482422 8.46045,1.07751 L8.46045,3.38425 L5.53906,3.38425 L5.53906,1.07751 C5.53906,0.482422 5.05664,0 4.46191,0 Z M5.53906,8.46063 L5.53906,5.53931 L8.46045,5.53931 L8.46045,8.46063 L5.53906,8.46063 Z">
+												</path>
+											</svg></span>Duty cycle</th>
+									<th><span class="icon property-icon"><svg viewBox="0 0 14 14"
+												style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden"
+												class="typesFormula">
+												<path
+													d="M7.77892,7.06304 L4.62218,11.2875 C4.58556,11.3416 4.55285,11.4392 4.5504,11.5052 C4.5504,11.7022 4.7047,11.8619 4.89562,11.8619 L11.1383,11.8619 C11.6139,11.8619 11.9996,12.2598 11.9996,12.7507 L11.9996,13.1111 C11.9996,13.602 11.6139,14 11.1383,14 L1.861927,14 C1.385853,14 1.00011061,13.602 1.00011061,13.1111 L1.00011061,12.6858 C0.99718092,12.4783 1.0523567,12.3098 1.176868,12.1466 L4.39269,7.79888 C4.74816,7.31841 4.74572,6.65139 4.38683,6.17354 L1.400013,2.19436 C1.27306,2.03028 1.216419,1.85993 1.219349,1.65006 L1.219349,0.888889 C1.219349,0.397968 1.605091,0 2.08117,0 L10.91906,0 C11.3946,0 11.7804,0.397968 11.7804,0.888889 L11.7804,1.24925 C11.7804,1.74017 11.3946,2.13814 10.91906,2.13814 L5.13634,2.13814 C4.94542,2.13814 4.79064,2.29801 4.79064,2.49522 C4.79308,2.56049 4.82482,2.65709 4.86095,2.71087 L7.78038,6.68628 C7.8297,6.74847 7.84435,6.7934 7.84142,6.87363 C7.84435,6.95493 7.82921,7.00048 7.77892,7.06304 Z">
+												</path>
+											</svg></span>Peak&#x27;</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="40168279-6825-4918-b819-e2b42fd5922a">
+									<td class="cell-title"><a
+											href="https://www.notion.so/ADCS-4016827968254918b819e2b42fd5922a">ADCS</a></td>
+									<td class="cell-NK=\">2.295</td>
+									<td class="cell-n\Mg">100</td>
+									<td class="cell-euRl">2.295</td>
+								</tr>
+								<tr id="0fe3a0cb-1e77-4ef2-9e6c-a9a9b24a50f5">
+									<td class="cell-title"><a
+											href="https://www.notion.so/OBDH-0fe3a0cb1e774ef29e6ca9a9b24a50f5">OBDH</a></td>
+									<td class="cell-NK=\">15</td>
+									<td class="cell-n\Mg">100</td>
+									<td class="cell-euRl">15</td>
+								</tr>
+								<tr id="109dd0d8-9a99-4d15-9999-3e4a2db397b7">
+									<td class="cell-title"><a
+											href="https://www.notion.so/EPS-109dd0d89a994d1599993e4a2db397b7">EPS</a></td>
+									<td class="cell-NK=\">3</td>
+									<td class="cell-n\Mg">100</td>
+									<td class="cell-euRl">3</td>
+								</tr>
+								<tr id="9200a97f-86d2-400f-9959-a8ef34afabe0">
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-UHF-Tx-9200a97f86d2400f9959a8ef34afabe0">COMM-
+											UHF(Tx)</a></td>
+									<td class="cell-NK=\">2</td>
+									<td class="cell-n\Mg">2.5</td>
+									<td class="cell-euRl">0.05</td>
+								</tr>
+								<tr id="29ca0cf9-f7bf-41e4-8703-caa3dd05552c">
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-UHF-Rx-29ca0cf9f7bf41e48703caa3dd05552c">COMM-
+											UHF(Rx)</a></td>
+									<td class="cell-NK=\">0.1</td>
+									<td class="cell-n\Mg">100</td>
+									<td class="cell-euRl">0.1</td>
+								</tr>
+								<tr id="0dd8c245-1e3f-4414-80e2-5c8820d0d937">
+									<td class="cell-title"><a
+											href="https://www.notion.so/S-band-Tx-0dd8c2451e3f441480e25c8820d0d937">S-band(Tx)</a>
+									</td>
+									<td class="cell-NK=\">19</td>
+									<td class="cell-n\Mg"></td>
+									<td class="cell-euRl">0</td>
+								</tr>
+								<tr id="4ae9fe06-c78a-4023-a1b5-881a956074ea">
+									<td class="cell-title"><a
+											href="https://www.notion.so/Payload-4ae9fe06c78a4023a1b5881a956074ea">Payload</a></td>
+									<td class="cell-NK=\">5</td>
+									<td class="cell-n\Mg"></td>
+									<td class="cell-euRl">0</td>
+								</tr>
+								<tr id="4ae9fe06-c78a-4023-a1b5-881a956074ea">
+									<td class="cell-title">Solar Panels</td>
+									<td class="cell-NK=\">33.6</td>
+									<td class="cell-n\Mg">49.67</td>
+									<td class="cell-euRl">16.68912</td>
+								</tr>
+								<tr id="4ae9fe06-c78a-4023-a1b5-881a956074ea">
+									<td class="cell-title">Margin(%)</td>
+									<td class="cell-NK=\"></td>
+									<td class="cell-n\Mg"></td>
+									<td class="cell-euRl">-18.37</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Nominal Power Consumption</h3>
+						<table>
+							<thead>
+								<tr>
+									<th><span class="icon property-icon"><svg viewBox="0 0 14 14"
+												style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden"
+												class="typesTitle">
+												<path
+													d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z">
+												</path>
+											</svg></span>Name</th>
+									<th><span class="icon property-icon"><svg viewBox="0 0 14 14"
+												style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden"
+												class="typesNumber">
+												<path
+													d="M4.46191,0 C3.8667,0 3.38428,0.482422 3.38428,1.07751 L3.38428,3.38425 L1.07764,3.38425 C0.482422,3.38425 0,3.86667 0,4.46179 C0,5.05688 0.482422,5.53931 1.07764,5.53931 L3.38428,5.53931 L3.38428,8.46063 L1.07764,8.46063 C0.482422,8.46063 0,8.94308 0,9.53818 C0,10.1333 0.482422,10.6157 1.07764,10.6157 L3.38428,10.6157 L3.38428,12.9224 C3.38428,13.5175 3.8667,13.9999 4.46191,13.9999 C5.05664,13.9999 5.53906,13.5175 5.53906,12.9224 L5.53906,10.6157 L8.46045,10.6157 L8.46045,12.9224 C8.46045,13.5175 8.94287,13.9999 9.53809,13.9999 C10.1333,13.9999 10.6157,13.5175 10.6157,12.9224 L10.6157,10.6157 L12.9224,10.6157 C13.5176,10.6157 14,10.1333 14,9.53818 C14,8.94308 13.5176,8.46063 12.9224,8.46063 L10.6157,8.46063 L10.6157,5.53931 L12.9224,5.53931 C13.5176,5.53931 14,5.05688 14,4.46179 C14,3.86667 13.5176,3.38425 12.9224,3.38425 L10.6157,3.38425 L10.6157,1.07751 C10.6157,0.482422 10.1333,0 9.53809,0 C8.94287,0 8.46045,0.482422 8.46045,1.07751 L8.46045,3.38425 L5.53906,3.38425 L5.53906,1.07751 C5.53906,0.482422 5.05664,0 4.46191,0 Z M5.53906,8.46063 L5.53906,5.53931 L8.46045,5.53931 L8.46045,8.46063 L5.53906,8.46063 Z">
+												</path>
+											</svg></span>Nominal</th>
+									<th><span class="icon property-icon"><svg viewBox="0 0 14 14"
+												style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden"
+												class="typesNumber">
+												<path
+													d="M4.46191,0 C3.8667,0 3.38428,0.482422 3.38428,1.07751 L3.38428,3.38425 L1.07764,3.38425 C0.482422,3.38425 0,3.86667 0,4.46179 C0,5.05688 0.482422,5.53931 1.07764,5.53931 L3.38428,5.53931 L3.38428,8.46063 L1.07764,8.46063 C0.482422,8.46063 0,8.94308 0,9.53818 C0,10.1333 0.482422,10.6157 1.07764,10.6157 L3.38428,10.6157 L3.38428,12.9224 C3.38428,13.5175 3.8667,13.9999 4.46191,13.9999 C5.05664,13.9999 5.53906,13.5175 5.53906,12.9224 L5.53906,10.6157 L8.46045,10.6157 L8.46045,12.9224 C8.46045,13.5175 8.94287,13.9999 9.53809,13.9999 C10.1333,13.9999 10.6157,13.5175 10.6157,12.9224 L10.6157,10.6157 L12.9224,10.6157 C13.5176,10.6157 14,10.1333 14,9.53818 C14,8.94308 13.5176,8.46063 12.9224,8.46063 L10.6157,8.46063 L10.6157,5.53931 L12.9224,5.53931 C13.5176,5.53931 14,5.05688 14,4.46179 C14,3.86667 13.5176,3.38425 12.9224,3.38425 L10.6157,3.38425 L10.6157,1.07751 C10.6157,0.482422 10.1333,0 9.53809,0 C8.94287,0 8.46045,0.482422 8.46045,1.07751 L8.46045,3.38425 L5.53906,3.38425 L5.53906,1.07751 C5.53906,0.482422 5.05664,0 4.46191,0 Z M5.53906,8.46063 L5.53906,5.53931 L8.46045,5.53931 L8.46045,8.46063 L5.53906,8.46063 Z">
+												</path>
+											</svg></span>Duty cycle</th>
+									<th><span class="icon property-icon"><svg viewBox="0 0 14 14"
+												style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden"
+												class="typesFormula">
+												<path
+													d="M7.77892,7.06304 L4.62218,11.2875 C4.58556,11.3416 4.55285,11.4392 4.5504,11.5052 C4.5504,11.7022 4.7047,11.8619 4.89562,11.8619 L11.1383,11.8619 C11.6139,11.8619 11.9996,12.2598 11.9996,12.7507 L11.9996,13.1111 C11.9996,13.602 11.6139,14 11.1383,14 L1.861927,14 C1.385853,14 1.00011061,13.602 1.00011061,13.1111 L1.00011061,12.6858 C0.99718092,12.4783 1.0523567,12.3098 1.176868,12.1466 L4.39269,7.79888 C4.74816,7.31841 4.74572,6.65139 4.38683,6.17354 L1.400013,2.19436 C1.27306,2.03028 1.216419,1.85993 1.219349,1.65006 L1.219349,0.888889 C1.219349,0.397968 1.605091,0 2.08117,0 L10.91906,0 C11.3946,0 11.7804,0.397968 11.7804,0.888889 L11.7804,1.24925 C11.7804,1.74017 11.3946,2.13814 10.91906,2.13814 L5.13634,2.13814 C4.94542,2.13814 4.79064,2.29801 4.79064,2.49522 C4.79308,2.56049 4.82482,2.65709 4.86095,2.71087 L7.78038,6.68628 C7.8297,6.74847 7.84435,6.7934 7.84142,6.87363 C7.84435,6.95493 7.82921,7.00048 7.77892,7.06304 Z">
+												</path>
+											</svg></span>Nominal&#x27;</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="c7241ce3-a3de-4785-b224-e01b34240e53">
+									<td class="cell-title"><a
+											href="https://www.notion.so/ADCS-c7241ce3a3de4785b224e01b34240e53">ADCS</a></td>
+									<td class="cell-vn~a">0.571</td>
+									<td class="cell-?{l;">100</td>
+									<td class="cell-Achd">0.571</td>
+								</tr>
+								<tr id="d9da4cae-9fdf-4fe4-a488-6914a16df0c9">
+									<td class="cell-title"><a
+											href="https://www.notion.so/OBDH-d9da4cae9fdf4fe4a4886914a16df0c9">OBDH</a></td>
+									<td class="cell-vn~a">10</td>
+									<td class="cell-?{l;">100</td>
+									<td class="cell-Achd">10</td>
+								</tr>
+								<tr id="c9729088-1a99-4cf6-8fad-e9c826432411">
+									<td class="cell-title"><a
+											href="https://www.notion.so/EPS-c97290881a994cf68fade9c826432411">EPS</a></td>
+									<td class="cell-vn~a">2</td>
+									<td class="cell-?{l;">100</td>
+									<td class="cell-Achd">2</td>
+								</tr>
+								<tr id="f5961d20-6137-427b-bac9-37396a1ebf19">
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-UHF-Tx-f5961d206137427bbac937396a1ebf19">COMM-UHF(Tx)</a>
+									</td>
+									<td class="cell-vn~a">1</td>
+									<td class="cell-?{l;">2.5</td>
+									<td class="cell-Achd">0.025</td>
+								</tr>
+								<tr id="54aa207a-ab2a-4c43-8e57-a36cd4eaa49a">
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-UHF-Rx-54aa207aab2a4c438e57a36cd4eaa49a">COMM-UHF(Rx)</a>
+									</td>
+									<td class="cell-vn~a">0.0825</td>
+									<td class="cell-?{l;">100</td>
+									<td class="cell-Achd">0.0825</td>
+								</tr>
+								<tr id="78ac683f-9985-48d3-acc8-6ea16c43b590">
+									<td class="cell-title"><a
+											href="https://www.notion.so/S-band-Tx-78ac683f998548d3acc86ea16c43b590">S-band(Tx)</a>
+									</td>
+									<td class="cell-vn~a">17</td>
+									<td class="cell-?{l;">10.62</td>
+									<td class="cell-Achd">1.8054</td>
+								</tr>
+								<tr id="caa905ad-4e81-4c76-b6e9-12e6e332401a">
+									<td class="cell-title"><a
+											href="https://www.notion.so/Payload-caa905ad4e814c76b6e912e6e332401a">Payload</a></td>
+									<td class="cell-vn~a">4</td>
+									<td class="cell-?{l;">0.5017</td>
+									<td class="cell-Achd">0.020068</td>
+								</tr>
+								<tr id="4ae9fe06-c78a-4023-a1b5-881a956074ea">
+									<td class="cell-title">Solar Panels</td>
+									<td class="cell-NK=\">33.6</td>
+									<td class="cell-n\Mg">49.67</td>
+									<td class="cell-euRl">16.68912</td>
+								</tr>
+								<tr id="4ae9fe06-c78a-4023-a1b5-881a956074ea">
+									<td class="cell-title">Margin(%)</td>
+									<td class="cell-NK=\"></td>
+									<td class="cell-n\Mg"></td>
+									<td class="cell-euRl">15.07</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Safe Mode Power Consumption</h3>
+						<table>
+							<thead>
+								<tr>
+									<th><span class="icon property-icon"><svg viewBox="0 0 14 14"
+												style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden"
+												class="typesTitle">
+												<path
+													d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z">
+												</path>
+											</svg></span>Name</th>
+									<th><span class="icon property-icon"><svg viewBox="0 0 14 14"
+												style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden"
+												class="typesNumber">
+												<path
+													d="M4.46191,0 C3.8667,0 3.38428,0.482422 3.38428,1.07751 L3.38428,3.38425 L1.07764,3.38425 C0.482422,3.38425 0,3.86667 0,4.46179 C0,5.05688 0.482422,5.53931 1.07764,5.53931 L3.38428,5.53931 L3.38428,8.46063 L1.07764,8.46063 C0.482422,8.46063 0,8.94308 0,9.53818 C0,10.1333 0.482422,10.6157 1.07764,10.6157 L3.38428,10.6157 L3.38428,12.9224 C3.38428,13.5175 3.8667,13.9999 4.46191,13.9999 C5.05664,13.9999 5.53906,13.5175 5.53906,12.9224 L5.53906,10.6157 L8.46045,10.6157 L8.46045,12.9224 C8.46045,13.5175 8.94287,13.9999 9.53809,13.9999 C10.1333,13.9999 10.6157,13.5175 10.6157,12.9224 L10.6157,10.6157 L12.9224,10.6157 C13.5176,10.6157 14,10.1333 14,9.53818 C14,8.94308 13.5176,8.46063 12.9224,8.46063 L10.6157,8.46063 L10.6157,5.53931 L12.9224,5.53931 C13.5176,5.53931 14,5.05688 14,4.46179 C14,3.86667 13.5176,3.38425 12.9224,3.38425 L10.6157,3.38425 L10.6157,1.07751 C10.6157,0.482422 10.1333,0 9.53809,0 C8.94287,0 8.46045,0.482422 8.46045,1.07751 L8.46045,3.38425 L5.53906,3.38425 L5.53906,1.07751 C5.53906,0.482422 5.05664,0 4.46191,0 Z M5.53906,8.46063 L5.53906,5.53931 L8.46045,5.53931 L8.46045,8.46063 L5.53906,8.46063 Z">
+												</path>
+											</svg></span>Nominal</th>
+									<th><span class="icon property-icon"><svg viewBox="0 0 14 14"
+												style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden"
+												class="typesNumber">
+												<path
+													d="M4.46191,0 C3.8667,0 3.38428,0.482422 3.38428,1.07751 L3.38428,3.38425 L1.07764,3.38425 C0.482422,3.38425 0,3.86667 0,4.46179 C0,5.05688 0.482422,5.53931 1.07764,5.53931 L3.38428,5.53931 L3.38428,8.46063 L1.07764,8.46063 C0.482422,8.46063 0,8.94308 0,9.53818 C0,10.1333 0.482422,10.6157 1.07764,10.6157 L3.38428,10.6157 L3.38428,12.9224 C3.38428,13.5175 3.8667,13.9999 4.46191,13.9999 C5.05664,13.9999 5.53906,13.5175 5.53906,12.9224 L5.53906,10.6157 L8.46045,10.6157 L8.46045,12.9224 C8.46045,13.5175 8.94287,13.9999 9.53809,13.9999 C10.1333,13.9999 10.6157,13.5175 10.6157,12.9224 L10.6157,10.6157 L12.9224,10.6157 C13.5176,10.6157 14,10.1333 14,9.53818 C14,8.94308 13.5176,8.46063 12.9224,8.46063 L10.6157,8.46063 L10.6157,5.53931 L12.9224,5.53931 C13.5176,5.53931 14,5.05688 14,4.46179 C14,3.86667 13.5176,3.38425 12.9224,3.38425 L10.6157,3.38425 L10.6157,1.07751 C10.6157,0.482422 10.1333,0 9.53809,0 C8.94287,0 8.46045,0.482422 8.46045,1.07751 L8.46045,3.38425 L5.53906,3.38425 L5.53906,1.07751 C5.53906,0.482422 5.05664,0 4.46191,0 Z M5.53906,8.46063 L5.53906,5.53931 L8.46045,5.53931 L8.46045,8.46063 L5.53906,8.46063 Z">
+												</path>
+											</svg></span>Duty cycle</th>
+									<th><span class="icon property-icon"><svg viewBox="0 0 14 14"
+												style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden"
+												class="typesFormula">
+												<path
+													d="M7.77892,7.06304 L4.62218,11.2875 C4.58556,11.3416 4.55285,11.4392 4.5504,11.5052 C4.5504,11.7022 4.7047,11.8619 4.89562,11.8619 L11.1383,11.8619 C11.6139,11.8619 11.9996,12.2598 11.9996,12.7507 L11.9996,13.1111 C11.9996,13.602 11.6139,14 11.1383,14 L1.861927,14 C1.385853,14 1.00011061,13.602 1.00011061,13.1111 L1.00011061,12.6858 C0.99718092,12.4783 1.0523567,12.3098 1.176868,12.1466 L4.39269,7.79888 C4.74816,7.31841 4.74572,6.65139 4.38683,6.17354 L1.400013,2.19436 C1.27306,2.03028 1.216419,1.85993 1.219349,1.65006 L1.219349,0.888889 C1.219349,0.397968 1.605091,0 2.08117,0 L10.91906,0 C11.3946,0 11.7804,0.397968 11.7804,0.888889 L11.7804,1.24925 C11.7804,1.74017 11.3946,2.13814 10.91906,2.13814 L5.13634,2.13814 C4.94542,2.13814 4.79064,2.29801 4.79064,2.49522 C4.79308,2.56049 4.82482,2.65709 4.86095,2.71087 L7.78038,6.68628 C7.8297,6.74847 7.84435,6.7934 7.84142,6.87363 C7.84435,6.95493 7.82921,7.00048 7.77892,7.06304 Z">
+												</path>
+											</svg></span>Nominal&#x27;</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="f09d560d-f257-43c2-9783-5ce43b64d335">
+									<td class="cell-title"><a
+											href="https://www.notion.so/ADCS-f09d560df25743c297835ce43b64d335">ADCS</a></td>
+									<td class="cell-VneK">0.571</td>
+									<td class="cell-EWE\">100</td>
+									<td class="cell-YFoN">0.571</td>
+								</tr>
+								<tr id="7978530b-d161-4bfb-9e29-0f6b1ab67a06">
+									<td class="cell-title"><a
+											href="https://www.notion.so/OBDH-7978530bd1614bfb9e290f6b1ab67a06">OBDH</a></td>
+									<td class="cell-VneK">10</td>
+									<td class="cell-EWE\">100</td>
+									<td class="cell-YFoN">10</td>
+								</tr>
+								<tr id="ad6cddf8-9ae7-472c-a038-7325a8509dc7">
+									<td class="cell-title"><a
+											href="https://www.notion.so/EPS-ad6cddf89ae7472ca0387325a8509dc7">EPS</a></td>
+									<td class="cell-VneK">2</td>
+									<td class="cell-EWE\">100</td>
+									<td class="cell-YFoN">2</td>
+								</tr>
+								<tr id="37342819-3302-4eda-9fca-b739e9f1cc0e">
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-UHF-Tx-3734281933024eda9fcab739e9f1cc0e">COMM-UHF(Tx)</a>
+									</td>
+									<td class="cell-VneK">1</td>
+									<td class="cell-EWE\">0</td>
+									<td class="cell-YFoN">0</td>
+								</tr>
+								<tr id="8b0413b0-178f-4229-bdee-e1130528d47a">
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-UHF-Rx-8b0413b0178f4229bdeee1130528d47a">COMM-UHF(Rx)</a>
+									</td>
+									<td class="cell-VneK">0.0825</td>
+									<td class="cell-EWE\">100</td>
+									<td class="cell-YFoN">0.0825</td>
+								</tr>
+								<tr id="e6d8324d-94b4-46a0-b568-8770db8de9ab">
+									<td class="cell-title"><a
+											href="https://www.notion.so/S-band-Tx-e6d8324d94b446a0b5688770db8de9ab">S-band(Tx)</a>
+									</td>
+									<td class="cell-VneK">17</td>
+									<td class="cell-EWE\">0</td>
+									<td class="cell-YFoN">0</td>
+								</tr>
+								<tr id="9cb1f100-5ba3-4446-b98f-b83f177bf513">
+									<td class="cell-title"><a
+											href="https://www.notion.so/Payload-9cb1f1005ba34446b98fb83f177bf513">Payload</a></td>
+									<td class="cell-VneK">4</td>
+									<td class="cell-EWE\">0</td>
+									<td class="cell-YFoN">0</td>
+								</tr>
+								<tr id="4ae9fe06-c78a-4023-a1b5-881a956074ea">
+									<td class="cell-title">Solar Panels</td>
+									<td class="cell-NK=\">33.6</td>
+									<td class="cell-n\Mg">49.67</td>
+									<td class="cell-euRl">16.68912</td>
+								</tr>
+								<tr id="4ae9fe06-c78a-4023-a1b5-881a956074ea">
+									<td class="cell-title">Margin(%)</td>
+									<td class="cell-NK=\"></td>
+									<td class="cell-n\Mg"></td>
+									<td class="cell-euRl">31.89</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Pheonix Mode Power Consumption</h3>
+						<table class="collection-content">
+							<thead>
+								<tr>
+									<th><span class="icon property-icon"><svg viewBox="0 0 14 14"
+												style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden"
+												class="typesTitle">
+												<path
+													d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z">
+												</path>
+											</svg></span>Name</th>
+									<th><span class="icon property-icon"><svg viewBox="0 0 14 14"
+												style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden"
+												class="typesNumber">
+												<path
+													d="M4.46191,0 C3.8667,0 3.38428,0.482422 3.38428,1.07751 L3.38428,3.38425 L1.07764,3.38425 C0.482422,3.38425 0,3.86667 0,4.46179 C0,5.05688 0.482422,5.53931 1.07764,5.53931 L3.38428,5.53931 L3.38428,8.46063 L1.07764,8.46063 C0.482422,8.46063 0,8.94308 0,9.53818 C0,10.1333 0.482422,10.6157 1.07764,10.6157 L3.38428,10.6157 L3.38428,12.9224 C3.38428,13.5175 3.8667,13.9999 4.46191,13.9999 C5.05664,13.9999 5.53906,13.5175 5.53906,12.9224 L5.53906,10.6157 L8.46045,10.6157 L8.46045,12.9224 C8.46045,13.5175 8.94287,13.9999 9.53809,13.9999 C10.1333,13.9999 10.6157,13.5175 10.6157,12.9224 L10.6157,10.6157 L12.9224,10.6157 C13.5176,10.6157 14,10.1333 14,9.53818 C14,8.94308 13.5176,8.46063 12.9224,8.46063 L10.6157,8.46063 L10.6157,5.53931 L12.9224,5.53931 C13.5176,5.53931 14,5.05688 14,4.46179 C14,3.86667 13.5176,3.38425 12.9224,3.38425 L10.6157,3.38425 L10.6157,1.07751 C10.6157,0.482422 10.1333,0 9.53809,0 C8.94287,0 8.46045,0.482422 8.46045,1.07751 L8.46045,3.38425 L5.53906,3.38425 L5.53906,1.07751 C5.53906,0.482422 5.05664,0 4.46191,0 Z M5.53906,8.46063 L5.53906,5.53931 L8.46045,5.53931 L8.46045,8.46063 L5.53906,8.46063 Z">
+												</path>
+											</svg></span>Nominal</th>
+									<th><span class="icon property-icon"><svg viewBox="0 0 14 14"
+												style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden"
+												class="typesNumber">
+												<path
+													d="M4.46191,0 C3.8667,0 3.38428,0.482422 3.38428,1.07751 L3.38428,3.38425 L1.07764,3.38425 C0.482422,3.38425 0,3.86667 0,4.46179 C0,5.05688 0.482422,5.53931 1.07764,5.53931 L3.38428,5.53931 L3.38428,8.46063 L1.07764,8.46063 C0.482422,8.46063 0,8.94308 0,9.53818 C0,10.1333 0.482422,10.6157 1.07764,10.6157 L3.38428,10.6157 L3.38428,12.9224 C3.38428,13.5175 3.8667,13.9999 4.46191,13.9999 C5.05664,13.9999 5.53906,13.5175 5.53906,12.9224 L5.53906,10.6157 L8.46045,10.6157 L8.46045,12.9224 C8.46045,13.5175 8.94287,13.9999 9.53809,13.9999 C10.1333,13.9999 10.6157,13.5175 10.6157,12.9224 L10.6157,10.6157 L12.9224,10.6157 C13.5176,10.6157 14,10.1333 14,9.53818 C14,8.94308 13.5176,8.46063 12.9224,8.46063 L10.6157,8.46063 L10.6157,5.53931 L12.9224,5.53931 C13.5176,5.53931 14,5.05688 14,4.46179 C14,3.86667 13.5176,3.38425 12.9224,3.38425 L10.6157,3.38425 L10.6157,1.07751 C10.6157,0.482422 10.1333,0 9.53809,0 C8.94287,0 8.46045,0.482422 8.46045,1.07751 L8.46045,3.38425 L5.53906,3.38425 L5.53906,1.07751 C5.53906,0.482422 5.05664,0 4.46191,0 Z M5.53906,8.46063 L5.53906,5.53931 L8.46045,5.53931 L8.46045,8.46063 L5.53906,8.46063 Z">
+												</path>
+											</svg></span>Duty cycle</th>
+									<th><span class="icon property-icon"><svg viewBox="0 0 14 14"
+												style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden"
+												class="typesFormula">
+												<path
+													d="M7.77892,7.06304 L4.62218,11.2875 C4.58556,11.3416 4.55285,11.4392 4.5504,11.5052 C4.5504,11.7022 4.7047,11.8619 4.89562,11.8619 L11.1383,11.8619 C11.6139,11.8619 11.9996,12.2598 11.9996,12.7507 L11.9996,13.1111 C11.9996,13.602 11.6139,14 11.1383,14 L1.861927,14 C1.385853,14 1.00011061,13.602 1.00011061,13.1111 L1.00011061,12.6858 C0.99718092,12.4783 1.0523567,12.3098 1.176868,12.1466 L4.39269,7.79888 C4.74816,7.31841 4.74572,6.65139 4.38683,6.17354 L1.400013,2.19436 C1.27306,2.03028 1.216419,1.85993 1.219349,1.65006 L1.219349,0.888889 C1.219349,0.397968 1.605091,0 2.08117,0 L10.91906,0 C11.3946,0 11.7804,0.397968 11.7804,0.888889 L11.7804,1.24925 C11.7804,1.74017 11.3946,2.13814 10.91906,2.13814 L5.13634,2.13814 C4.94542,2.13814 4.79064,2.29801 4.79064,2.49522 C4.79308,2.56049 4.82482,2.65709 4.86095,2.71087 L7.78038,6.68628 C7.8297,6.74847 7.84435,6.7934 7.84142,6.87363 C7.84435,6.95493 7.82921,7.00048 7.77892,7.06304 Z">
+												</path>
+											</svg></span>Nominal&#x27;</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="1a9146bf-c532-4595-91b5-1f81a13646ba">
+									<td class="cell-title"><a
+											href="https://www.notion.so/ADCS-1a9146bfc532459591b51f81a13646ba">ADCS</a></td>
+									<td class="cell-XGhN">0.571</td>
+									<td class="cell-ta&lt;_">0</td>
+									<td class="cell-PENz">0</td>
+								</tr>
+								<tr id="d9c7698e-bb5f-4aca-9a71-6cb30f34a415">
+									<td class="cell-title"><a
+											href="https://www.notion.so/OBDH-d9c7698ebb5f4aca9a716cb30f34a415">OBDH</a></td>
+									<td class="cell-XGhN">10</td>
+									<td class="cell-ta&lt;_">100</td>
+									<td class="cell-PENz">10</td>
+								</tr>
+								<tr id="a4ba00e5-c829-4ed8-8866-10ced25ae3ab">
+									<td class="cell-title"><a
+											href="https://www.notion.so/EPS-a4ba00e5c8294ed8886610ced25ae3ab">EPS</a></td>
+									<td class="cell-XGhN">2</td>
+									<td class="cell-ta&lt;_">100</td>
+									<td class="cell-PENz">2</td>
+								</tr>
+								<tr id="0806b325-14e6-4fb3-bc85-88d3c56efd63">
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-UHF-Tx-0806b32514e64fb3bc8588d3c56efd63">COMM-UHF(Tx)</a>
+									</td>
+									<td class="cell-XGhN">1</td>
+									<td class="cell-ta&lt;_">0</td>
+									<td class="cell-PENz">0</td>
+								</tr>
+								<tr id="5cc37f33-6a7d-49e7-a760-1ff9cfa3bb62">
+									<td class="cell-title"><a
+											href="https://www.notion.so/COMM-UHF-Rx-5cc37f336a7d49e7a7601ff9cfa3bb62">COMM-UHF(Rx)</a>
+									</td>
+									<td class="cell-XGhN">0.0825</td>
+									<td class="cell-ta&lt;_">2.5</td>
+									<td class="cell-PENz">0.0020625</td>
+								</tr>
+								<tr id="b0f13336-f30a-492f-a083-985788b44bed">
+									<td class="cell-title"><a
+											href="https://www.notion.so/S-band-Tx-b0f13336f30a492fa083985788b44bed">S-band(Tx)</a>
+									</td>
+									<td class="cell-XGhN">17</td>
+									<td class="cell-ta&lt;_">0</td>
+									<td class="cell-PENz">0</td>
+								</tr>
+								<tr id="95978ae7-4d02-44cf-8e94-fe3a88d0d59d">
+									<td class="cell-title"><a
+											href="https://www.notion.so/Payload-95978ae74d0244cf8e94fe3a88d0d59d">Payload</a></td>
+									<td class="cell-XGhN">4</td>
+									<td class="cell-ta&lt;_">0</td>
+									<td class="cell-PENz">0</td>
+								</tr>
+								<tr id="4ae9fe06-c78a-4023-a1b5-881a956074ea">
+									<td class="cell-title">Solar Panels</td>
+									<td class="cell-NK=\">33.6</td>
+									<td class="cell-n\Mg">49.67</td>
+									<td class="cell-euRl">16.68912</td>
+								</tr>
+								<tr id="4ae9fe06-c78a-4023-a1b5-881a956074ea">
+									<td class="cell-title">Margin(%)</td>
+									<td class="cell-NK=\"></td>
+									<td class="cell-n\Mg"></td>
+									<td class="cell-euRl">39.05</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+				<section>
+					<section>
+						Thank You for listening.
+						<img src="./src/img/test.svg" alt="">
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

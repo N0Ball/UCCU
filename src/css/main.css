@@ -1,0 +1,454 @@
+small{
+    font-size: 0.75rem !important;
+}
+td{
+    font-size: 1.25rem !important;
+}
+.misssion-matrix>tbody>tr>td{
+    font-size: 1.25rem !important;
+    border-bottom: none !important;
+    border-right: 2px solid white !important;
+    text-align: left !important;
+}
+.misssion-matrix{
+    border: 1px solid white !important;
+}
+.table-normal{
+    font-size: 1.5rem;
+}
+.hero{
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    left: 500px;
+}
+.table-medium{
+    font-size: 1.25rem;
+}
+.table-small{
+    font-size: 1rem;
+}
+.table-normal>tbody>tr>td{
+    font-size: 1.25rem !important;
+}
+.table-medium>tbody>tr>td{
+    font-size: 1.15rem !important;
+}
+.table-small>tbody>tr>td{
+    font-size: 1rem !important;
+}
+.mx-auto{
+    margin-left: auto !important;
+}
+.d-flex{
+    display: flex;
+}
+.text-dark{
+    color: black !important;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+.justify-content-end{
+    justify-content: flex-end;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.text-start{
+    text-align: start;
+}
+.px-3{
+    padding-left: 3rem;
+}
+.px-5{
+    padding-left: 5rem;
+}
+.no-max{
+    max-width: none !important;
+    max-height: none !important;
+}
+.red{
+    color: red;
+}
+.earth{
+    position: relative;
+    right: -250px;
+}
+.time-line{
+    position: absolute;
+    top: 0;
+}
+.present>.stage-1{
+    transform: scale(.7) translateX(-2100px);
+}
+.present>.stage-2{
+    animation: forward-0 2s linear;
+    animation-fill-mode: forwards;
+    transform: scale(.7) translateX(-3650px);
+}
+.present>.stage-3{
+    animation: forward-1 2s linear;
+    animation-fill-mode: forwards;
+    transform: scale(.7) translateX(-4550px);
+}
+.present>.stage-4{
+    animation: forward-2 2s linear;
+    animation-fill-mode: forwards;
+    transform: scale(.7) translateX(-6150px);
+}
+.present>.stage-5{
+    animation: forward-3 1.5s linear;
+    animation-fill-mode: forwards;
+    transform: scale(.7) translateX(-7550px);
+}
+.present>.fade-out{
+    opacity: 1;
+    animation: fade-out 2s linear;
+    animation-fill-mode: forwards !important;
+}
+.present>.fade-in{
+    opacity: 0;
+    animation: fade-in 2s linear;
+    animation-fill-mode: forwards !important;
+}
+.present>.late{
+    animation-delay: 2s;
+}
+.main-stage{
+    position: absolute;
+    left: 170px;
+    top: 120px;
+    font-size: 1.5rem;
+}
+.main-standby{
+    position: absolute;
+    left: 220px;
+    top: -150px;
+    font-size: 1rem;
+    opacity: .5;
+}
+.charge_mode{
+    background-color: #EFDEB7;
+    color: black;
+    padding: .5rem;
+}
+.charge_mode-standby{
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    font-size: 1rem;
+    opacity: .5;
+}
+.camera_mode{
+    background-color: #99CCCC;
+    color: black;
+    padding: .5rem;
+}
+.camera_mode-standby{
+    position: absolute;
+    left: 20px;
+    top: 250px;
+    font-size: 1rem;
+    opacity: .5;
+}
+.standby_mode{
+    background-color: #c3cccc;
+    color: black;
+    padding: .5rem;
+}
+.standby_mode-standby{
+    position: absolute;
+    left: 320px;
+    top: -20px;
+    font-size: 1rem;
+    opacity: .5;
+}
+.ttc_mode{
+    background-color: #CCFFCC;
+    color: black;
+    padding: .5rem;
+}
+.ttc_mode-standby{
+    position: absolute;
+    left: 320px;
+    top: 250px;
+    font-size: 1rem;
+    opacity: .5;
+}
+.present>.standby{
+    animation: stand-by 3s linear;
+}
+.present>.to-main{
+    animation: to-main 3s linear;
+    animation-fill-mode: forwards;
+}
+.up-arrow-text{
+    position: absolute;
+    left: 105px;
+    top: 45px;
+    font-size: 1.5rem;
+}
+.up-arrow{
+    position: absolute;
+    left: 270px;
+    top: 5px;
+    font-size: 5rem;
+}
+.down-arrow-text{
+    position: absolute;
+    left: 370px;
+    top: 15px;
+    font-size: 1.5rem;
+    text-align: start;
+}
+.down-arrow{
+    position: absolute;
+    left: 320px;
+    top: 5px;
+    font-size: 5rem;
+}
+.present>.sat-img-1{
+    position: absolute;
+    left: 715px;
+    top: 160px;
+    animation: circle-1 3s linear;
+    animation-fill-mode: forwards !important;
+}
+.present>.sat-img-2{
+    position: absolute;
+    left: 715px;
+    top: 160px;
+    animation: circle-2 3s linear;
+    animation-fill-mode: forwards;
+}
+.present>.sat-img-3{
+    position: absolute;
+    left: 715px;
+    top: 160px;
+    animation: circle-3 3s linear;
+    animation-fill-mode: forwards;
+}
+.present>.sat-img-4{
+    position: absolute;
+    left: 715px;
+    top: 160px;
+    animation: circle-4 3s linear;
+    animation-fill-mode: forwards;
+}
+.sat-img-5{
+    position: absolute;
+    left: 715px;
+    top: 160px;
+    transform: 
+        rotate(-200deg)
+        translate(-160px, 62px);
+}
+.present>.sat-img-6{
+    position: absolute;
+    left: 715px;
+    top: 160px;
+    animation: circle-6 3s linear;
+    animation-fill-mode: forwards;
+}
+.ttc{
+    position: absolute;
+    left: 745px;
+    top: 60px;
+    transform: 
+        rotate(-17deg)
+        scale(.6);
+}
+.emergency{
+    position: absolute;
+    left: 600px;
+    top: -100px;
+    height: 600px;
+    width: 350px;
+    font-size: 1.5rem;
+    text-align: start;
+    background-color: gray;
+    padding: .5rem;
+}
+.safe-mode{
+    position: relative;
+    background-color: orange;
+    color: black;
+    width: 300px;
+    left: 40px;
+    top: -10px;
+    font-size: 1.5rem;
+    padding: .4rem;
+}
+.phoenix-mode{
+    position: relative;
+    background-color: red;
+    color: black;
+    width: 300px;
+    left: 40px;
+    top: 50px;
+    font-size: 1.5rem;
+    padding: .4rem;
+}
+@keyframes fade-out{
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes fade-in{
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes forward-0{
+    0%{
+        transform: scale(.7) translateX(-2100px);
+    }
+    40%{
+        transform: scale(.7) translateX(-2150px);
+    }
+    50%{
+        transform: scale(.7) translateX(-3600px);
+    }
+}
+@keyframes forward-1{
+    0%{
+        transform: scale(.7) translateX(-3650px);
+    }
+    40%{
+        transform: scale(.7) translateX(-3700px);
+    }
+    50%{
+        transform: scale(.7) translateX(-4500px);
+    }
+}
+@keyframes forward-2{
+    0%{
+        transform: scale(.7) translateX(-4550px);
+    }
+    40%{
+        transform: scale(.7) translateX(-4600px);
+    }
+    50%{
+        transform: scale(.7) translateX(-6100px);
+    }
+}
+@keyframes forward-3{
+    0%{
+        transform: scale(.7) translateX(-6150px);
+    }
+    30%{
+        transform: scale(.7) translateX(-6200px);
+    }
+    55%{
+        transform: scale(.7) translateX(-7600px);
+    }
+    70%{
+        transform: scale(.7) translateX(-7500px);
+    }
+}
+@keyframes circle-1{
+    0%{
+        transform:
+            rotate(111deg)
+            translate(-160px, 62px);
+    }
+    100%{
+        transform:
+            rotate(0deg)
+            translate(-160px, 62px);
+    }
+}
+@keyframes circle-2{
+    0%{
+        transform:
+            rotate(0deg)
+            translate(-160px, 62px);
+    }
+    100%{
+        transform:
+            rotate(-10deg)
+            translate(-160px, 62px);
+    }
+}
+@keyframes circle-3{
+    0%{
+        transform:
+            rotate(-10deg)
+            translate(-160px, 62px);
+    }
+    100%{
+        transform:
+            rotate(-68deg)
+            translate(-160px, 62px);
+    }
+}
+@keyframes circle-4{
+    0%{
+        transform:
+            rotate(-68deg)
+            translate(-160px, 62px);
+    }
+    100%{
+        transform:
+            rotate(-200deg)
+            translate(-160px, 62px);
+    }
+}
+@keyframes circle-6{
+    0%{
+        transform:
+            rotate(-200deg)
+            translate(-160px, 62px);
+    }
+    100%{
+        transform:
+            rotate(-250deg)
+            translate(-160px, 62px);
+    }
+}
+@keyframes stand-by{
+    0%{
+        left: 170px;
+        top: 120px;
+        font-size: 1.5rem;
+        opacity: 1;
+    }
+}
+@keyframes to-main{
+    100%{
+        left: 170px;
+        top: 120px;
+        font-size: 1.5rem;
+        opacity: 1;
+    }
+}
+@keyframes camera_1{
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes camera_2{
+    100%{
+        left: 0px;
+        top: 150px;
+        font-size: 1rem;
+        opacity: .5;
+    }
+}
+@keyframes ttc_1{
+    100%{
+        left: 400px;
+        top: 150px;
+        font-size: 1rem;
+        opacity: .5;
+    }
+}
+@keyframes camera_mode{
+    100%{
+        opacity: 1;
+    }
+}
